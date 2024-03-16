@@ -1,3 +1,9 @@
+# Inspired by this: https://tkunt.medium.com/computing-bounds-for-ranks-and-ti-qualification-of-the-dpc-2023-tour-3-870957df4ec5
+# Disclaimer:
+# - I'm not sure if this is correct
+# - I have little experience with optimisation
+# - I am not a Python developer (don't judge my code style please)
+
 from ortools.sat.python import cp_model
 import csv
 import sys
