@@ -3,7 +3,7 @@
 # - I'm not sure if this is correct
 # - I have little experience with optimisation
 # - I am not a Python developer (don't judge my code style please)
-# The main difference is that I maximised the points for each team's 8th place.  I also used OR-Tools instead of Gurobi, as I ran into license restrictions, and I'm not forking over 4 figures for it.
+# I used OR-Tools instead of Gurobi, as I ran into license restrictions, and I'm not forking over 4 figures for it.
 
 from ortools.sat.python import cp_model
 import csv
@@ -127,7 +127,7 @@ def main():
                     model.Add(d[j] - d[i] <= aux[(i, j)] * M)
             ranks[i] = sum(aux[(i, j)] for j in range(teams))
 
-        model.Add(ranks[team_to_optimise] == 8)
+        model.Add(ranks[team_to_optimise] > 8)
         model.Maximize(d[team_to_optimise])
         solver = cp_model.CpSolver()
         status = solver.Solve(model)
