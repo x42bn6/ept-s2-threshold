@@ -1,94 +1,28 @@
 Optimising for BetBoom Team
-Rank 8 Team Spirit had 9080 points
-Objective value: 9060.0
-BetBoom Team,7500,560,1000,9060
-Xtreme Gaming,6160,1040,2200,9400
-Team Falcons,5880,2240,1000,9120
-Gaimin Gladiators,5680,560,3200,9440
-Team Spirit,4640,2240,2200,9080
-Team Liquid,3298,6400,0,9698
+Rank 8 BetBoom Team had 10260 points
+Objective value: 10260.0
+BetBoom Team,7500,560,2200,10260
+Xtreme Gaming,6160,3200,1000,10360
+Team Falcons,5880,2240,2200,10320
+Gaimin Gladiators,5680,1040,4000,10720
+Team Spirit,4640,4800,1000,10440
+Team Liquid,3298,2240,5000,10538
 OG,2296,0,0,2296
-G2 x iG,1722,4800,4000,10522
-Shopify Rebellion,840,280,250,1370
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,250,866
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,3200,6000,9550
-Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,4000,5000,9098
-1win,42,1040,0,1082
-Talon Esports,0,280,500,780
-NA team,0,0,0,0
-SA team,0,0,0,0
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,500,500
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for Xtreme Gaming
-Rank 8 Shopify Rebellion had 9440 points
-Objective value: 9400.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,1040,2200,9400
-Team Falcons,5880,3200,500,9580
-Gaimin Gladiators,5680,560,3200,9440
-Team Spirit,4640,4000,1000,9640
-Team Liquid,3298,2240,4000,9538
-OG,2296,0,0,2296
-G2 x iG,1722,2240,6000,9962
-Shopify Rebellion,840,6400,2200,9440
+G2 x iG,1722,6400,3200,11322
+Shopify Rebellion,840,560,0,1400
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
-Blacklist International,420,0,250,670
+Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,4800,5000,10150
+Tundra Esports,350,4000,6000,10350
 Azure Ray,175,0,0,175
-PSG Quest,100,0,250,350
+PSG Quest,100,0,0,100
 HEROIC,98,280,0,378
 1win,42,280,0,322
-Talon Esports,0,560,0,560
-NA team,0,0,0,0
-SA team,0,0,500,500
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for Team Falcons
-Rank 8 Gaimin Gladiators had 9380 points
-Objective value: 9360.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,280,3200,9360
-Gaimin Gladiators,5680,3200,500,9380
-Team Spirit,4640,1040,4000,9680
-Team Liquid,3298,4000,2200,9498
-OG,2296,0,0,2296
-G2 x iG,1722,2240,6000,9962
-Shopify Rebellion,840,6400,2200,9440
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,500,1160
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,4800,5000,10150
-Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,560,0,658
-1win,42,280,0,322
-Talon Esports,0,560,0,560
-NA team,0,0,0,0
+Talon Esports,0,1040,500,1540
+NA team,0,0,500,500
 SA team,0,0,250,250
 WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
@@ -97,31 +31,98 @@ MENA team,0,0,250,250
 China team,0,0,0,0
 SEA team,0,0,0,0
 
-Optimising for Gaimin Gladiators
-Rank 8 Xtreme Gaming had 9400 points
-Objective value: 9380.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,1040,2200,9400
-Team Falcons,5880,560,3200,9640
-Gaimin Gladiators,5680,3200,500,9380
-Team Spirit,4640,4000,1000,9640
-Team Liquid,3298,2240,4000,9538
+Optimising for Xtreme Gaming
+Rank 8 Xtreme Gaming had 9920 points
+Objective value: 9920.0
+BetBoom Team,7500,2240,1000,10740
+Xtreme Gaming,6160,560,3200,9920
+Team Falcons,5880,1040,4000,10920
+Gaimin Gladiators,5680,2240,2200,10120
+Team Spirit,4640,6400,0,11040
+Team Liquid,3298,4800,2200,10298
 OG,2296,0,0,2296
-G2 x iG,1722,2240,6000,9962
-Shopify Rebellion,840,6400,2200,9440
+G2 x iG,1722,3200,5000,9922
+Shopify Rebellion,840,280,1000,2120
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,280,500,1130
+Tundra Esports,350,560,0,910
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,1040,250,1388
+1win,42,4000,6000,10042
+Talon Esports,0,280,0,280
+NA team,0,0,0,0
+SA team,0,0,0,0
+WEU team 1,0,0,0,0
+WEU team 2,0,0,500,500
+EEU team,0,0,0,0
+MENA team,0,0,500,500
+China team,0,0,0,0
+SEA team,0,0,250,250
+
+Optimising for Team Falcons
+Rank 8 Team Falcons had 10440 points
+Rank 8 Shopify Rebellion had 10440 points
+Objective value: 10440.0
+BetBoom Team,7500,1040,2200,10740
+Xtreme Gaming,6160,2240,2200,10600
+Team Falcons,5880,560,4000,10440
+Gaimin Gladiators,5680,4000,1000,10680
+Team Spirit,4640,4800,1000,10440
+Team Liquid,3298,2240,5000,10538
+OG,2296,0,0,2296
+G2 x iG,1722,3200,6000,10922
+Shopify Rebellion,840,6400,3200,10440
+Team Secret,721,0,500,1221
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,280,0,630
 Azure Ray,175,0,0,175
 PSG Quest,100,0,250,350
-HEROIC,98,4800,5000,9898
+HEROIC,98,1040,0,1138
 1win,42,280,0,322
-Talon Esports,0,560,250,810
+Talon Esports,0,560,0,560
 NA team,0,0,0,0
+SA team,0,0,250,250
+WEU team 1,0,0,0,0
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,0,0
+China team,0,0,0,0
+SEA team,0,0,500,500
+
+Optimising for Gaimin Gladiators
+Rank 8 Gaimin Gladiators had 10240 points
+Objective value: 10240.0
+BetBoom Team,7500,2240,500,10240
+Xtreme Gaming,6160,3200,1000,10360
+Team Falcons,5880,2240,2200,10320
+Gaimin Gladiators,5680,560,4000,10240
+Team Spirit,4640,1040,5000,10680
+Team Liquid,3298,4000,3200,10498
+OG,2296,0,0,2296
+G2 x iG,1722,6400,2200,10322
+Shopify Rebellion,840,280,0,1120
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,500,1160
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,1040,250,1640
+Azure Ray,175,0,0,175
+PSG Quest,100,0,250,350
+HEROIC,98,4800,6000,10898
+1win,42,280,0,322
+Talon Esports,0,560,0,560
+NA team,0,0,1000,1000
 SA team,0,0,0,0
 WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
@@ -131,32 +132,33 @@ China team,0,0,0,0
 SEA team,0,0,0,0
 
 Optimising for Team Spirit
-Rank 8 Team Falcons had 9330 points
-Objective value: 9200.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,3200,250,9330
-Gaimin Gladiators,5680,560,3200,9440
-Team Spirit,4640,560,4000,9200
-Team Liquid,3298,4000,2200,9498
-OG,2296,0,250,2546
-G2 x iG,1722,2240,6000,9962
-Shopify Rebellion,840,6400,2200,9440
+Rank 8 Team Spirit had 10440 points
+Rank 8 Shopify Rebellion had 10440 points
+Objective value: 10440.0
+BetBoom Team,7500,1040,2200,10740
+Xtreme Gaming,6160,2240,2200,10600
+Team Falcons,5880,4000,1000,10880
+Gaimin Gladiators,5680,1040,4000,10720
+Team Spirit,4640,4800,1000,10440
+Team Liquid,3298,2240,5000,10538
+OG,2296,0,0,2296
+G2 x iG,1722,3200,6000,10922
+Shopify Rebellion,840,6400,3200,10440
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,500,1160
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,1040,0,1390
+Tundra Esports,350,280,0,630
 Azure Ray,175,0,0,175
-PSG Quest,100,0,500,600
-HEROIC,98,4800,5000,9898
+PSG Quest,100,0,250,350
+HEROIC,98,560,250,908
 1win,42,280,0,322
-Talon Esports,0,280,0,280
+Talon Esports,0,560,0,560
 NA team,0,0,0,0
 SA team,0,0,0,0
-WEU team 1,0,0,0,0
+WEU team 1,0,0,500,500
 WEU team 2,0,0,0,0
 EEU team,0,0,0,0
 MENA team,0,0,0,0
@@ -164,64 +166,262 @@ China team,0,0,0,0
 SEA team,0,0,0,0
 
 Optimising for Team Liquid
-Rank 8 Xtreme Gaming had 9400 points
-Objective value: 9338.000000000002
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,2240,2200,10320
-Gaimin Gladiators,5680,560,3200,9440
+Rank 8 Team Liquid had 10338 points
+Objective value: 10338.000000000002
+BetBoom Team,7500,2240,1000,10740
+Xtreme Gaming,6160,2240,2200,10600
+Team Falcons,5880,3200,2200,11280
+Gaimin Gladiators,5680,1040,4000,10720
+Team Spirit,4640,4800,1000,10440
+Team Liquid,3298,1040,6000,10338
+OG,2296,0,500,2796
+G2 x iG,1722,4000,5000,10722
+Shopify Rebellion,840,6400,3200,10440
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,280,0,630
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,280,250,628
+1win,42,560,0,602
+Talon Esports,0,560,0,560
+NA team,0,0,0,0
+SA team,0,0,0,0
+WEU team 1,0,0,0,0
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,250,250
+China team,0,0,0,0
+SEA team,0,0,500,500
+
+Optimising for OG
+Rank 8 OG had 8296 points
+Objective value: 8296.000000000004
+BetBoom Team,7500,1040,500,9040
+Xtreme Gaming,6160,2240,250,8650
+Team Falcons,5880,4000,1000,10880
+Gaimin Gladiators,5680,1040,2200,8920
 Team Spirit,4640,4800,0,9440
-Team Liquid,3298,1040,5000,9338
-OG,2296,0,0,2296
-G2 x iG,1722,4000,4000,9722
-Shopify Rebellion,840,6400,2200,9440
+Team Liquid,3298,280,0,3578
+OG,2296,0,6000,8296
+G2 x iG,1722,560,0,2282
+Shopify Rebellion,840,560,0,1400
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,250,910
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,3200,6000,9550
+Tundra Esports,350,3200,5000,8550
 Azure Ray,175,0,0,175
-PSG Quest,100,0,250,350
-HEROIC,98,280,500,878
-1win,42,280,0,322
-Talon Esports,0,560,0,560
-NA team,0,0,0,0
-SA team,0,0,0,0
+PSG Quest,100,0,0,100
+HEROIC,98,280,0,378
+1win,42,6400,3200,9642
+Talon Esports,0,2240,0,2240
+NA team,0,0,4000,4000
+SA team,0,0,500,500
 WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
-EEU team,0,0,500,500
-MENA team,0,0,0,0
-China team,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,2200,2200
+China team,0,0,1000,1000
 SEA team,0,0,0,0
 
-Optimising for OG
-Rank 8 Team Falcons had 8370 points
-Objective value: 8296.000000000004
-BetBoom Team,7500,560,1000,9060
-Xtreme Gaming,6160,1040,4000,11200
-Team Falcons,5880,2240,250,8370
-Gaimin Gladiators,5680,280,250,6210
-Team Spirit,4640,4000,0,8640
-Team Liquid,3298,2240,3200,8738
-OG,2296,0,6000,8296
-G2 x iG,1722,4800,2200,8722
-Shopify Rebellion,840,3200,5000,9040
+Optimising for G2 x iG
+Rank 8 G2 x iG had 10322 points
+Objective value: 10321.999999999998
+BetBoom Team,7500,2240,1000,10740
+Xtreme Gaming,6160,1040,3200,10400
+Team Falcons,5880,560,4000,10440
+Gaimin Gladiators,5680,3200,2200,11080
+Team Spirit,4640,4800,1000,10440
+Team Liquid,3298,2240,5000,10538
+OG,2296,0,0,2296
+G2 x iG,1722,6400,2200,10322
+Shopify Rebellion,840,560,0,1400
 Team Secret,721,0,0,721
-Aurora Gaming,660,0,500,1160
+Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,1040,0,1390
+Tundra Esports,350,4000,6000,10350
+Azure Ray,175,0,0,175
+PSG Quest,100,0,250,350
+HEROIC,98,280,0,378
+1win,42,1040,0,1082
+Talon Esports,0,280,250,530
+NA team,0,0,500,500
+SA team,0,0,500,500
+WEU team 1,0,0,0,0
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,0,0
+China team,0,0,0,0
+SEA team,0,0,0,0
+
+Optimising for Shopify Rebellion
+Rank 8 Shopify Rebellion had 10440 points
+Objective value: 10440.0
+BetBoom Team,7500,1040,2200,10740
+Xtreme Gaming,6160,2240,2200,10600
+Team Falcons,5880,4000,1000,10880
+Gaimin Gladiators,5680,1040,4000,10720
+Team Spirit,4640,4800,1000,10440
+Team Liquid,3298,2240,5000,10538
+OG,2296,0,0,2296
+G2 x iG,1722,3200,6000,10922
+Shopify Rebellion,840,6400,3200,10440
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,560,0,910
+Azure Ray,175,0,0,175
+PSG Quest,100,0,250,350
+HEROIC,98,560,0,658
+1win,42,280,0,322
+Talon Esports,0,280,500,780
+NA team,0,0,0,0
+SA team,0,0,500,500
+WEU team 1,0,0,0,0
+WEU team 2,0,0,250,250
+EEU team,0,0,0,0
+MENA team,0,0,0,0
+China team,0,0,0,0
+SEA team,0,0,0,0
+
+Optimising for Team Secret
+Rank 8 Team Secret had 6721 points
+Objective value: 6721.000000000004
+BetBoom Team,7500,2240,2200,11940
+Xtreme Gaming,6160,6400,1000,13560
+Team Falcons,5880,1040,2200,9120
+Gaimin Gladiators,5680,280,250,6210
+Team Spirit,4640,4800,0,9440
+Team Liquid,3298,3200,250,6748
+OG,2296,0,0,2296
+G2 x iG,1722,4000,1000,6722
+Shopify Rebellion,840,560,0,1400
+Team Secret,721,0,6000,6721
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,280,0,630
 Azure Ray,175,0,0,175
 PSG Quest,100,0,0,100
-HEROIC,98,280,500,878
+HEROIC,98,560,0,658
+1win,42,2240,5000,7282
+Talon Esports,0,1040,0,1040
+NA team,0,0,4000,4000
+SA team,0,0,500,500
+WEU team 1,0,0,0,0
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,500,500
+China team,0,0,0,0
+SEA team,0,0,3200,3200
+
+Optimising for Aurora Gaming
+Rank 8 Aurora Gaming had 6660 points
+Objective value: 6660.0
+BetBoom Team,7500,560,250,8310
+Xtreme Gaming,6160,3200,4000,13360
+Team Falcons,5880,2240,1000,9120
+Gaimin Gladiators,5680,560,2200,8440
+Team Spirit,4640,4000,0,8640
+Team Liquid,3298,4800,0,8098
+OG,2296,0,0,2296
+G2 x iG,1722,280,0,2002
+Shopify Rebellion,840,1040,500,2380
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,6000,6660
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,1040,1000,2390
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,2240,250,2588
 1win,42,6400,2200,8642
-Talon Esports,0,560,0,560
+Talon Esports,0,280,0,280
 NA team,0,0,0,0
 SA team,0,0,0,0
+WEU team 1,0,0,5000,5000
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,500,500
+China team,0,0,3200,3200
+SEA team,0,0,0,0
+
+Optimising for Entity
+Rank 8 Entity had 6616 points
+Objective value: 6616.000000000004
+BetBoom Team,7500,4000,3200,14700
+Xtreme Gaming,6160,2240,250,8650
+Team Falcons,5880,3200,1000,10080
+Gaimin Gladiators,5680,280,4000,9960
+Team Spirit,4640,1040,2200,7880
+Team Liquid,3298,280,0,3578
+OG,2296,0,0,2296
+G2 x iG,1722,560,0,2282
+Shopify Rebellion,840,6400,500,7740
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,6000,6616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,560,1000,1910
+Azure Ray,175,0,500,675
+PSG Quest,100,0,250,350
+HEROIC,98,4800,2200,7098
+1win,42,2240,0,2282
+Talon Esports,0,1040,0,1040
+NA team,0,0,0,0
+SA team,0,0,0,0
+WEU team 1,0,0,0,0
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,0,0
+China team,0,0,0,0
+SEA team,0,0,5000,5000
+
+Optimising for LGD Gaming
+Rank 8 LGD Gaming had 6420 points
+Objective value: 6420.0
+BetBoom Team,7500,4000,500,12000
+Xtreme Gaming,6160,1040,500,7700
+Team Falcons,5880,280,250,6410
+Gaimin Gladiators,5680,560,250,6490
+Team Spirit,4640,2240,0,6880
+Team Liquid,3298,280,5000,8578
+OG,2296,0,0,2296
+G2 x iG,1722,3200,0,4922
+Shopify Rebellion,840,2240,0,3080
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,6000,6420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,560,1000,1910
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,6400,0,6498
+1win,42,1040,3200,4282
+Talon Esports,0,4800,2200,7000
+NA team,0,0,2200,2200
+SA team,0,0,4000,4000
 WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
 EEU team,0,0,0,0
@@ -229,363 +429,165 @@ MENA team,0,0,1000,1000
 China team,0,0,0,0
 SEA team,0,0,0,0
 
-Optimising for G2 x iG
-Rank 8 1win had 9242 points
-Objective value: 9122.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,1040,2200,9400
-Team Falcons,5880,280,3200,9360
-Gaimin Gladiators,5680,2240,2200,10120
-Team Spirit,4640,4800,0,9440
-Team Liquid,3298,2240,4000,9538
+Optimising for Blacklist International
+Rank 8 Blacklist International had 6420 points
+Objective value: 6420.0
+BetBoom Team,7500,4000,1000,12500
+Xtreme Gaming,6160,280,500,6940
+Team Falcons,5880,560,2200,8640
+Gaimin Gladiators,5680,3200,250,9130
+Team Spirit,4640,1040,0,5680
+Team Liquid,3298,4800,250,8348
 OG,2296,0,0,2296
-G2 x iG,1722,6400,1000,9122
-Shopify Rebellion,840,4000,5000,9840
+G2 x iG,1722,280,0,2002
+Shopify Rebellion,840,1040,5000,6880
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
+Entity,616,0,3200,3816
 LGD Gaming,420,0,0,420
-Blacklist International,420,0,500,920
+Blacklist International,420,0,6000,6420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,280,0,630
-Azure Ray,175,0,0,175
+Tundra Esports,350,6400,0,6750
+Azure Ray,175,0,2200,2375
 PSG Quest,100,0,0,100
-HEROIC,98,560,0,658
-1win,42,3200,6000,9242
-Talon Esports,0,560,0,560
+HEROIC,98,560,1000,1658
+1win,42,2240,0,2282
+Talon Esports,0,2240,0,2240
 NA team,0,0,0,0
-SA team,0,0,250,250
+SA team,0,0,0,0
 WEU team 1,0,0,0,0
-WEU team 2,0,0,250,250
-EEU team,0,0,0,0
+WEU team 2,0,0,0,0
+EEU team,0,0,4000,4000
 MENA team,0,0,500,500
 China team,0,0,0,0
 SEA team,0,0,0,0
 
-Optimising for Shopify Rebellion
-Rank 8 G2 x iG had 9122 points
-Objective value: 9080.0
-BetBoom Team,7500,560,2200,10260
-Xtreme Gaming,6160,1040,2200,9400
-Team Falcons,5880,280,3200,9360
-Gaimin Gladiators,5680,3200,250,9130
-Team Spirit,4640,4000,500,9140
-Team Liquid,3298,2240,4000,9538
-OG,2296,0,0,2296
-G2 x iG,1722,6400,1000,9122
-Shopify Rebellion,840,2240,6000,9080
-Team Secret,721,0,250,971
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,280,0,630
-Azure Ray,175,0,0,175
-PSG Quest,100,0,500,600
-HEROIC,98,560,0,658
-1win,42,1040,0,1082
-Talon Esports,0,4800,5000,9800
-NA team,0,0,0,0
-SA team,0,0,1000,1000
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for Team Secret
-Rank 8 Gaimin Gladiators had 6740 points
-Objective value: 6721.000000000004
+Optimising for Virtus.pro
+Rank 8 Virtus.pro had 6350 points
+Objective value: 6350.0
 BetBoom Team,7500,280,250,8030
 Xtreme Gaming,6160,280,250,6690
 Team Falcons,5880,560,500,6940
 Gaimin Gladiators,5680,560,500,6740
 Team Spirit,4640,1040,0,5680
-Team Liquid,3298,1040,0,4338
+Team Liquid,3298,1040,5000,9338
 OG,2296,0,0,2296
 G2 x iG,1722,2240,0,3962
-Shopify Rebellion,840,2240,4000,7080
-Team Secret,721,0,6000,6721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,3200,3200,6750
-Azure Ray,175,0,0,175
-PSG Quest,100,0,1000,1100
-HEROIC,98,4000,5000,9098
-1win,42,4800,2200,7042
-Talon Esports,0,6400,1000,7400
-NA team,0,0,0,0
-SA team,0,0,0,0
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,2200,2200
-SEA team,0,0,0,0
-
-Optimising for Aurora Gaming
-Rank 8 Tundra Esports had 6750 points
-Objective value: 6660.0
-BetBoom Team,7500,4000,500,12000
-Xtreme Gaming,6160,560,1000,7720
-Team Falcons,5880,1040,1000,7920
-Gaimin Gladiators,5680,6400,500,12580
-Team Spirit,4640,2240,0,6880
-Team Liquid,3298,280,0,3578
-OG,2296,0,0,2296
-G2 x iG,1722,280,0,2002
-Shopify Rebellion,840,4800,2200,7840
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,6000,6660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,3200,3200,6750
-Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,560,0,658
-1win,42,2240,5000,7282
-Talon Esports,0,1040,0,1040
-NA team,0,0,0,0
-SA team,0,0,250,250
-WEU team 1,0,0,250,250
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,4000,4000
-China team,0,0,2200,2200
-SEA team,0,0,0,0
-
-Optimising for Entity
-Rank 8 G2 x iG had 6762 points
-Objective value: 6616.000000000004
-BetBoom Team,7500,560,250,8310
-Xtreme Gaming,6160,4000,1000,11160
-Team Falcons,5880,280,1000,7160
-Gaimin Gladiators,5680,4800,500,10980
-Team Spirit,4640,280,3200,8120
-Team Liquid,3298,2240,2200,7738
-OG,2296,0,0,2296
-G2 x iG,1722,1040,4000,6762
-Shopify Rebellion,840,560,2200,3600
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,6000,6616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,1040,0,1390
-Azure Ray,175,0,0,175
-PSG Quest,100,0,5000,5100
-HEROIC,98,6400,500,6998
-1win,42,2240,0,2282
-Talon Esports,0,3200,0,3200
-NA team,0,0,0,0
-SA team,0,0,0,0
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,250,250
-
-Optimising for LGD Gaming
-Rank 8 Xtreme Gaming had 6970 points
-Objective value: 6420.0
-BetBoom Team,7500,1040,250,8790
-Xtreme Gaming,6160,560,250,6970
-Team Falcons,5880,560,1000,7440
-Gaimin Gladiators,5680,4800,2200,12680
-Team Spirit,4640,280,0,4920
-Team Liquid,3298,4000,0,7298
-OG,2296,0,5000,7296
-G2 x iG,1722,6400,0,8122
-Shopify Rebellion,840,3200,3200,7240
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,4000,4660
-Entity,616,0,0,616
-LGD Gaming,420,0,6000,6420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,2200,2550
-Tundra Esports,350,2240,0,2590
-Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,1040,0,1138
-1win,42,2240,0,2282
-Talon Esports,0,280,0,280
-NA team,0,0,0,0
-SA team,0,0,1000,1000
-WEU team 1,0,0,500,500
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,500,500
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for Blacklist International
-Rank 8 Tundra Esports had 6750 points
-Objective value: 6420.0
-BetBoom Team,7500,280,250,8030
-Xtreme Gaming,6160,4000,500,10660
-Team Falcons,5880,4800,1000,11680
-Gaimin Gladiators,5680,3200,2200,11080
-Team Spirit,4640,560,3200,8400
-Team Liquid,3298,2240,250,5788
-OG,2296,0,5000,7296
-G2 x iG,1722,1040,4000,6762
-Shopify Rebellion,840,560,1000,2400
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,6000,6420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,6400,0,6750
-Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,280,500,878
-1win,42,2240,0,2282
-Talon Esports,0,1040,0,1040
-NA team,0,0,0,0
-SA team,0,0,0,0
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,2200,2200
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for Virtus.pro
-Rank 8 Gaimin Gladiators had 6490 points
-Objective value: 6350.0
-BetBoom Team,7500,280,5000,12780
-Xtreme Gaming,6160,4800,4000,14960
-Team Falcons,5880,280,3200,9360
-Gaimin Gladiators,5680,560,250,6490
-Team Spirit,4640,2240,0,6880
-Team Liquid,3298,1040,2200,6538
-OG,2296,0,0,2296
-G2 x iG,1722,6400,0,8122
-Shopify Rebellion,840,4000,2200,7040
+Shopify Rebellion,840,2240,0,3080
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,6000,6350
-Tundra Esports,350,3200,500,4050
-Azure Ray,175,0,1000,1175
-PSG Quest,100,0,500,600
-HEROIC,98,2240,250,2588
-1win,42,1040,0,1082
+Tundra Esports,350,3200,0,3550
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,4000,3200,7298
+1win,42,4800,0,4842
+Talon Esports,0,6400,1000,7400
+NA team,0,0,1000,1000
+SA team,0,0,0,0
+WEU team 1,0,0,2200,2200
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,4000,4000
+China team,0,0,2200,2200
+SEA team,0,0,0,0
+
+Optimising for Tundra Esports
+Rank 8 Tundra Esports had 10150 points
+Objective value: 10150.0
+BetBoom Team,7500,1040,2200,10740
+Xtreme Gaming,6160,3200,1000,10360
+Team Falcons,5880,2240,2200,10320
+Gaimin Gladiators,5680,4000,500,10180
+Team Spirit,4640,2240,4000,10880
+Team Liquid,3298,1040,6000,10338
+OG,2296,0,0,2296
+G2 x iG,1722,280,0,2002
+Shopify Rebellion,840,6400,3200,10440
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,500,920
+Blacklist International,420,0,1000,1420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,4800,5000,10150
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,280,250,628
+1win,42,560,0,602
 Talon Esports,0,560,0,560
 NA team,0,0,0,0
 SA team,0,0,0,0
 WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
 EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,1000,1000
-
-Optimising for Tundra Esports
-Rank 8 Xtreme Gaming had 9400 points
-Objective value: 9350.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,3200,500,9580
-Gaimin Gladiators,5680,2240,2200,10120
-Team Spirit,4640,1040,4000,9680
-Team Liquid,3298,280,6000,9578
-OG,2296,0,0,2296
-G2 x iG,1722,4800,3200,9722
-Shopify Rebellion,840,6400,2200,9440
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,250,670
-Virtus.pro,350,0,0,350
-Tundra Esports,350,4000,5000,9350
-Azure Ray,175,0,0,175
-PSG Quest,100,0,250,350
-HEROIC,98,560,0,658
-1win,42,560,0,602
-Talon Esports,0,280,0,280
-NA team,0,0,0,0
-SA team,0,0,500,500
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
+MENA team,0,0,250,250
 China team,0,0,0,0
 SEA team,0,0,0,0
 
 Optimising for Azure Ray
-Rank 8 Tundra Esports had 6390 points
+Rank 8 Azure Ray had 6175 points
 Objective value: 6175.0
-BetBoom Team,7500,4000,1000,12500
-Xtreme Gaming,6160,6400,2200,14760
-Team Falcons,5880,280,1000,7160
-Gaimin Gladiators,5680,280,2200,8160
-Team Spirit,4640,560,0,5200
-Team Liquid,3298,1040,3200,7538
+BetBoom Team,7500,280,250,8030
+Xtreme Gaming,6160,280,500,6940
+Team Falcons,5880,560,250,6690
+Gaimin Gladiators,5680,560,500,6740
+Team Spirit,4640,1040,0,5680
+Team Liquid,3298,1040,5000,9338
 OG,2296,0,0,2296
-G2 x iG,1722,4800,0,6522
-Shopify Rebellion,840,2240,250,3330
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,500,1160
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,1040,5000,6390
-Azure Ray,175,0,6000,6175
-PSG Quest,100,0,250,350
-HEROIC,98,2240,500,2838
-1win,42,3200,4000,7242
-Talon Esports,0,560,0,560
-NA team,0,0,0,0
-SA team,0,0,0,0
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for PSG Quest
-Rank 8 G2 x iG had 6522 points
-Objective value: 6100.0
-BetBoom Team,7500,560,2200,10260
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,560,5000,11440
-Gaimin Gladiators,5680,280,3200,9160
-Team Spirit,4640,4000,0,8640
-Team Liquid,3298,3200,500,6998
-OG,2296,0,0,2296
-G2 x iG,1722,4800,0,6522
-Shopify Rebellion,840,1040,250,2130
+G2 x iG,1722,2240,0,3962
+Shopify Rebellion,840,2240,0,3080
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,6400,250,7000
-Azure Ray,175,0,4000,4175
-PSG Quest,100,0,6000,6100
-HEROIC,98,280,0,378
-1win,42,2240,500,2782
-Talon Esports,0,1040,2200,3240
-NA team,0,0,0,0
-SA team,0,0,1000,1000
+Virtus.pro,350,0,1000,1350
+Tundra Esports,350,3200,0,3550
+Azure Ray,175,0,6000,6175
+PSG Quest,100,0,0,100
+HEROIC,98,4000,2200,6298
+1win,42,4800,0,4842
+Talon Esports,0,6400,0,6400
+NA team,0,0,2200,2200
+SA team,0,0,0,0
 WEU team 1,0,0,0,0
+WEU team 2,0,0,1000,1000
+EEU team,0,0,0,0
+MENA team,0,0,3200,3200
+China team,0,0,0,0
+SEA team,0,0,4000,4000
+
+Optimising for PSG Quest
+Rank 8 PSG Quest had 6100 points
+Objective value: 6100.0
+BetBoom Team,7500,3200,1000,11700
+Xtreme Gaming,6160,560,250,6970
+Team Falcons,5880,280,250,6410
+Gaimin Gladiators,5680,1040,500,7220
+Team Spirit,4640,6400,0,11040
+Team Liquid,3298,4800,0,8098
+OG,2296,0,0,2296
+G2 x iG,1722,2240,0,3962
+Shopify Rebellion,840,280,0,1120
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,5000,5420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,4000,3200,7550
+Azure Ray,175,0,1000,1175
+PSG Quest,100,0,6000,6100
+HEROIC,98,1040,0,1138
+1win,42,560,500,1102
+Talon Esports,0,2240,0,2240
+NA team,0,0,2200,2200
+SA team,0,0,4000,4000
+WEU team 1,0,0,2200,2200
 WEU team 2,0,0,0,0
 EEU team,0,0,0,0
 MENA team,0,0,0,0
@@ -593,50 +595,83 @@ China team,0,0,0,0
 SEA team,0,0,0,0
 
 Optimising for HEROIC
-Rank 8 Team Liquid had 9338 points
-Objective value: 9298.000000000002
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,2240,2200,10320
-Gaimin Gladiators,5680,560,3200,9440
-Team Spirit,4640,4800,0,9440
-Team Liquid,3298,1040,5000,9338
+Rank 8 HEROIC had 10098 points
+Objective value: 10098.000000000002
+BetBoom Team,7500,1040,2200,10740
+Xtreme Gaming,6160,3200,1000,10360
+Team Falcons,5880,560,4000,10440
+Gaimin Gladiators,5680,2240,2200,10120
+Team Spirit,4640,4800,1000,10440
+Team Liquid,3298,2240,5000,10538
 OG,2296,0,0,2296
-G2 x iG,1722,4000,4000,9722
-Shopify Rebellion,840,6400,2200,9440
+G2 x iG,1722,1040,0,2762
+Shopify Rebellion,840,6400,3200,10440
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
-Entity,616,0,500,1116
-LGD Gaming,420,0,0,420
+Entity,616,0,0,616
+LGD Gaming,420,0,500,920
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,280,0,630
+Tundra Esports,350,560,0,910
 Azure Ray,175,0,0,175
-PSG Quest,100,0,250,350
-HEROIC,98,3200,6000,9298
+PSG Quest,100,0,500,600
+HEROIC,98,4000,6000,10098
 1win,42,280,0,322
-Talon Esports,0,560,250,810
+Talon Esports,0,280,250,530
 NA team,0,0,0,0
 SA team,0,0,0,0
-WEU team 1,0,0,0,0
+WEU team 1,0,0,250,250
 WEU team 2,0,0,0,0
-EEU team,0,0,500,500
+EEU team,0,0,0,0
 MENA team,0,0,0,0
 China team,0,0,0,0
 SEA team,0,0,0,0
 
 Optimising for 1win
-Rank 8 Team Liquid had 9338 points
-Objective value: 9242.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,280,3200,9360
+Rank 8 1win had 10042 points
+Objective value: 10042.0
+BetBoom Team,7500,560,2200,10260
+Xtreme Gaming,6160,3200,1000,10360
+Team Falcons,5880,1040,3200,10120
 Gaimin Gladiators,5680,2240,2200,10120
-Team Spirit,4640,4800,0,9440
-Team Liquid,3298,1040,5000,9338
+Team Spirit,4640,6400,0,11040
+Team Liquid,3298,2240,5000,10538
 OG,2296,0,0,2296
-G2 x iG,1722,4000,4000,9722
-Shopify Rebellion,840,6400,2200,9440
+G2 x iG,1722,4800,4000,10522
+Shopify Rebellion,840,280,500,1620
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,250,866
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,1000,1420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,280,0,630
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,560,250,908
+1win,42,4000,6000,10042
+Talon Esports,0,1040,0,1040
+NA team,0,0,0,0
+SA team,0,0,0,0
+WEU team 1,0,0,0,0
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,500,500
+China team,0,0,0,0
+SEA team,0,0,0,0
+
+Optimising for Talon Esports
+Rank 8 Talon Esports had 10000 points
+Objective value: 10000.0
+BetBoom Team,7500,1040,2200,10740
+Xtreme Gaming,6160,3200,1000,10360
+Team Falcons,5880,2240,2200,10320
+Gaimin Gladiators,5680,1040,4000,10720
+Team Spirit,4640,2240,3200,10080
+Team Liquid,3298,6400,500,10198
+OG,2296,0,0,2296
+G2 x iG,1722,280,1000,3002
+Shopify Rebellion,840,4800,5000,10640
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
@@ -645,46 +680,13 @@ Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
 Tundra Esports,350,560,0,910
 Azure Ray,175,0,0,175
-PSG Quest,100,0,250,350
-HEROIC,98,280,0,378
-1win,42,3200,6000,9242
-Talon Esports,0,560,250,810
+PSG Quest,100,0,500,600
+HEROIC,98,560,250,908
+1win,42,280,0,322
+Talon Esports,0,4000,6000,10000
 NA team,0,0,0,0
-SA team,0,0,500,500
-WEU team 1,0,0,500,500
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for Talon Esports
-Rank 8 Team Liquid had 9338 points
-Objective value: 9200.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,2240,1000,9400
-Team Falcons,5880,280,3200,9360
-Gaimin Gladiators,5680,2240,2200,10120
-Team Spirit,4640,4800,0,9440
-Team Liquid,3298,1040,5000,9338
-OG,2296,0,0,2296
-G2 x iG,1722,4000,4000,9722
-Shopify Rebellion,840,6400,2200,9440
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,500,850
-Tundra Esports,350,560,250,1160
-Azure Ray,175,0,0,175
-PSG Quest,100,0,250,350
-HEROIC,98,280,0,378
-1win,42,560,0,602
-Talon Esports,0,3200,6000,9200
-NA team,0,0,0,0
-SA team,0,0,500,500
-WEU team 1,0,0,0,0
+SA team,0,0,0,0
+WEU team 1,0,0,250,250
 WEU team 2,0,0,0,0
 EEU team,0,0,0,0
 MENA team,0,0,0,0
@@ -692,262 +694,262 @@ China team,0,0,0,0
 SEA team,0,0,0,0
 
 Optimising for NA team
-Rank 8 Gaimin Gladiators had 7220 points
+Rank 8 NA team had 6000 points
 Objective value: 6000.0
-BetBoom Team,7500,4800,250,12550
-Xtreme Gaming,6160,280,4000,10440
-Team Falcons,5880,560,2200,8640
-Gaimin Gladiators,5680,1040,500,7220
+BetBoom Team,7500,2240,250,9990
+Xtreme Gaming,6160,560,2200,8920
+Team Falcons,5880,280,500,6660
+Gaimin Gladiators,5680,2240,1000,8920
 Team Spirit,4640,1040,0,5680
-Team Liquid,3298,4000,0,7298
-OG,2296,0,0,2296
-G2 x iG,1722,3200,3200,8122
-Shopify Rebellion,840,2240,0,3080
+Team Liquid,3298,280,3200,6778
+OG,2296,0,500,2796
+G2 x iG,1722,560,0,2282
+Shopify Rebellion,840,4000,0,4840
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
-Entity,616,0,500,1116
+Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,280,0,630
+Virtus.pro,350,0,1000,1350
+Tundra Esports,350,6400,0,6750
 Azure Ray,175,0,0,175
-PSG Quest,100,0,250,350
-HEROIC,98,6400,1000,7498
-1win,42,2240,5000,7282
-Talon Esports,0,560,2200,2760
+PSG Quest,100,0,0,100
+HEROIC,98,3200,2200,5498
+1win,42,1040,0,1082
+Talon Esports,0,4800,4000,8800
 NA team,0,0,6000,6000
 SA team,0,0,0,0
 WEU team 1,0,0,0,0
-WEU team 2,0,0,1000,1000
+WEU team 2,0,0,0,0
 EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
+MENA team,0,0,5000,5000
+China team,0,0,250,250
 SEA team,0,0,0,0
 
 Optimising for SA team
-Rank 8 Shopify Rebellion had 6280 points
+Rank 8 SA team had 6000 points
 Objective value: 6000.0
-BetBoom Team,7500,280,500,8280
-Xtreme Gaming,6160,560,1000,7720
-Team Falcons,5880,560,2200,8640
-Gaimin Gladiators,5680,3200,1000,9880
-Team Spirit,4640,280,5000,9920
-Team Liquid,3298,2240,0,5538
+BetBoom Team,7500,3200,1000,11700
+Xtreme Gaming,6160,280,2200,8640
+Team Falcons,5880,560,5000,11440
+Gaimin Gladiators,5680,2240,2200,10120
+Team Spirit,4640,2240,3200,10080
+Team Liquid,3298,6400,0,9698
 OG,2296,0,0,2296
-G2 x iG,1722,1040,0,2762
-Shopify Rebellion,840,2240,3200,6280
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,4000,2200,6550
-Azure Ray,175,0,4000,4175
-PSG Quest,100,0,250,350
-HEROIC,98,4800,0,4898
-1win,42,1040,0,1082
-Talon Esports,0,6400,0,6400
-NA team,0,0,0,0
-SA team,0,0,6000,6000
-WEU team 1,0,0,500,500
-WEU team 2,0,0,0,0
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,250,250
-
-Optimising for WEU team 1
-Rank 8 G2 x iG had 6772 points
-Objective value: 6000.0
-BetBoom Team,7500,1040,2200,10740
-Xtreme Gaming,6160,560,1000,7720
-Team Falcons,5880,280,3200,9360
-Gaimin Gladiators,5680,1040,1000,7720
-Team Spirit,4640,2240,0,6880
-Team Liquid,3298,560,0,3858
-OG,2296,0,0,2296
-G2 x iG,1722,4800,250,6772
-Shopify Rebellion,840,6400,0,7240
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,4000,4420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,280,0,630
-Azure Ray,175,0,0,175
-PSG Quest,100,0,500,600
-HEROIC,98,3200,5000,8298
-1win,42,4000,2200,6242
-Talon Esports,0,2240,0,2240
-NA team,0,0,500,500
-SA team,0,0,0,0
-WEU team 1,0,0,6000,6000
-WEU team 2,0,0,250,250
-EEU team,0,0,0,0
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for WEU team 2
-Rank 8 Shopify Rebellion had 6640 points
-Objective value: 6000.0
-BetBoom Team,7500,280,2200,9980
-Xtreme Gaming,6160,560,250,6970
-Team Falcons,5880,2240,5000,13120
-Gaimin Gladiators,5680,280,1000,6960
-Team Spirit,4640,1040,4000,9680
-Team Liquid,3298,4000,0,7298
-OG,2296,0,2200,4496
-G2 x iG,1722,2240,0,3962
-Shopify Rebellion,840,4800,1000,6640
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,3200,3620
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,3200,0,3550
-Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,560,250,908
-1win,42,1040,0,1082
-Talon Esports,0,6400,500,6900
-NA team,0,0,0,0
-SA team,0,0,0,0
-WEU team 1,0,0,0,0
-WEU team 2,0,0,6000,6000
-EEU team,0,0,0,0
-MENA team,0,0,500,500
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for EEU team
-Rank 8 HEROIC had 6498 points
-Objective value: 6000.0
-BetBoom Team,7500,280,250,8030
-Xtreme Gaming,6160,4000,500,10660
-Team Falcons,5880,280,2200,8360
-Gaimin Gladiators,5680,1040,1000,7720
-Team Spirit,4640,6400,0,11040
-Team Liquid,3298,1040,2200,6538
-OG,2296,0,5000,7296
-G2 x iG,1722,2240,0,3962
-Shopify Rebellion,840,560,500,1900
-Team Secret,721,0,0,721
-Aurora Gaming,660,0,0,660
-Entity,616,0,0,616
-LGD Gaming,420,0,0,420
-Blacklist International,420,0,0,420
-Virtus.pro,350,0,0,350
-Tundra Esports,350,560,0,910
-Azure Ray,175,0,250,425
-PSG Quest,100,0,4000,4100
-HEROIC,98,3200,3200,6498
-1win,42,2240,0,2282
-Talon Esports,0,4800,1000,5800
-NA team,0,0,0,0
-SA team,0,0,0,0
-WEU team 1,0,0,0,0
-WEU team 2,0,0,0,0
-EEU team,0,0,6000,6000
-MENA team,0,0,0,0
-China team,0,0,0,0
-SEA team,0,0,0,0
-
-Optimising for MENA team
-Rank 8 Tundra Esports had 6750 points
-Objective value: 6000.0
-BetBoom Team,7500,1040,250,8790
-Xtreme Gaming,6160,4800,500,11460
-Team Falcons,5880,2240,250,8370
-Gaimin Gladiators,5680,560,1000,7240
-Team Spirit,4640,280,0,4920
-Team Liquid,3298,1040,0,4338
-OG,2296,0,2200,4496
-G2 x iG,1722,2240,4000,7962
-Shopify Rebellion,840,4000,3200,8040
+G2 x iG,1722,4000,4000,9722
+Shopify Rebellion,840,280,0,1120
 Team Secret,721,0,500,1221
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
+Tundra Esports,350,1040,0,1390
+Azure Ray,175,0,0,175
+PSG Quest,100,0,250,350
+HEROIC,98,560,0,658
+1win,42,4800,0,4842
+Talon Esports,0,1040,0,1040
+NA team,0,0,250,250
+SA team,0,0,6000,6000
+WEU team 1,0,0,1000,1000
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,0,0
+China team,0,0,0,0
+SEA team,0,0,500,500
+
+Optimising for WEU team 1
+Rank 8 WEU team 1 had 6000 points
+Objective value: 6000.0
+BetBoom Team,7500,4000,500,12000
+Xtreme Gaming,6160,560,2200,8920
+Team Falcons,5880,3200,250,9330
+Gaimin Gladiators,5680,2240,250,8170
+Team Spirit,4640,1040,0,5680
+Team Liquid,3298,560,4000,7858
+OG,2296,0,0,2296
+G2 x iG,1722,4800,0,6522
+Shopify Rebellion,840,1040,0,1880
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,500,1160
+Entity,616,0,0,616
+LGD Gaming,420,0,0,420
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,1000,1350
 Tundra Esports,350,6400,0,6750
 Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,280,1000,1378
-1win,42,560,2200,2802
-Talon Esports,0,3200,5000,8200
-NA team,0,0,0,0
+PSG Quest,100,0,2200,2300
+HEROIC,98,2240,1000,3338
+1win,42,280,0,322
+Talon Esports,0,280,0,280
+NA team,0,0,5000,5000
+SA team,0,0,0,0
+WEU team 1,0,0,6000,6000
+WEU team 2,0,0,0,0
+EEU team,0,0,0,0
+MENA team,0,0,0,0
+China team,0,0,3200,3200
+SEA team,0,0,0,0
+
+Optimising for WEU team 2
+Rank 8 WEU team 2 had 6000 points
+Objective value: 6000.0
+BetBoom Team,7500,4000,250,11750
+Xtreme Gaming,6160,1040,5000,12200
+Team Falcons,5880,3200,500,9580
+Gaimin Gladiators,5680,560,4000,10240
+Team Spirit,4640,2240,0,6880
+Team Liquid,3298,4800,0,8098
+OG,2296,0,0,2296
+G2 x iG,1722,2240,0,3962
+Shopify Rebellion,840,280,0,1120
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,500,1160
+Entity,616,0,2200,2816
+LGD Gaming,420,0,3200,3620
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,1000,1350
+Tundra Esports,350,280,0,630
+Azure Ray,175,0,0,175
+PSG Quest,100,0,2200,2300
+HEROIC,98,6400,250,6748
+1win,42,1040,0,1082
+Talon Esports,0,560,0,560
+NA team,0,0,1000,1000
 SA team,0,0,0,0
 WEU team 1,0,0,0,0
+WEU team 2,0,0,6000,6000
+EEU team,0,0,0,0
+MENA team,0,0,0,0
+China team,0,0,0,0
+SEA team,0,0,0,0
+
+Optimising for EEU team
+Rank 8 EEU team had 6000 points
+Objective value: 6000.0
+BetBoom Team,7500,4000,250,11750
+Xtreme Gaming,6160,2240,500,8900
+Team Falcons,5880,560,2200,8640
+Gaimin Gladiators,5680,560,2200,8440
+Team Spirit,4640,1040,0,5680
+Team Liquid,3298,2240,0,5538
+OG,2296,0,5000,7296
+G2 x iG,1722,6400,0,8122
+Shopify Rebellion,840,280,0,1120
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,0,660
+Entity,616,0,0,616
+LGD Gaming,420,0,250,670
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,3200,3200,6750
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,280,0,378
+1win,42,4800,0,4842
+Talon Esports,0,1040,1000,2040
+NA team,0,0,4000,4000
+SA team,0,0,500,500
+WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
+EEU team,0,0,6000,6000
+MENA team,0,0,1000,1000
+China team,0,0,0,0
+SEA team,0,0,0,0
+
+Optimising for MENA team
+Rank 8 MENA team had 6000 points
+Objective value: 6000.0
+BetBoom Team,7500,280,5000,12780
+Xtreme Gaming,6160,3200,1000,10360
+Team Falcons,5880,560,2200,8640
+Gaimin Gladiators,5680,2240,2200,10120
+Team Spirit,4640,4000,0,8640
+Team Liquid,3298,4800,0,8098
+OG,2296,0,0,2296
+G2 x iG,1722,280,0,2002
+Shopify Rebellion,840,6400,0,7240
+Team Secret,721,0,0,721
+Aurora Gaming,660,0,1000,1660
+Entity,616,0,4000,4616
+LGD Gaming,420,0,250,670
+Blacklist International,420,0,0,420
+Virtus.pro,350,0,0,350
+Tundra Esports,350,560,0,910
+Azure Ray,175,0,0,175
+PSG Quest,100,0,0,100
+HEROIC,98,1040,250,1388
+1win,42,2240,500,2782
+Talon Esports,0,1040,0,1040
+NA team,0,0,3200,3200
+SA team,0,0,0,0
+WEU team 1,0,0,0,0
+WEU team 2,0,0,500,500
 EEU team,0,0,0,0
 MENA team,0,0,6000,6000
 China team,0,0,0,0
 SEA team,0,0,0,0
 
 Optimising for China team
-Rank 8 1win had 6282 points
+Rank 8 China team had 6000 points
 Objective value: 6000.0
-BetBoom Team,7500,1040,1000,9540
-Xtreme Gaming,6160,3200,500,9860
-Team Falcons,5880,560,5000,11440
-Gaimin Gladiators,5680,4000,250,9930
-Team Spirit,4640,2240,0,6880
-Team Liquid,3298,280,0,3578
-OG,2296,0,2200,4496
-G2 x iG,1722,4800,0,6522
-Shopify Rebellion,840,6400,0,7240
+BetBoom Team,7500,4800,250,12550
+Xtreme Gaming,6160,1040,250,7450
+Team Falcons,5880,1040,500,7420
+Gaimin Gladiators,5680,560,1000,7240
+Team Spirit,4640,3200,0,7840
+Team Liquid,3298,280,4000,7578
+OG,2296,0,0,2296
+G2 x iG,1722,280,0,2002
+Shopify Rebellion,840,4000,0,4840
 Team Secret,721,0,0,721
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,280,3200,3830
+Tundra Esports,350,6400,1000,7750
 Azure Ray,175,0,0,175
-PSG Quest,100,0,0,100
-HEROIC,98,560,500,1158
-1win,42,2240,4000,6282
-Talon Esports,0,1040,1000,2040
-NA team,0,0,2200,2200
-SA team,0,0,0,0
+PSG Quest,100,0,3200,3300
+HEROIC,98,2240,0,2338
+1win,42,560,2200,2802
+Talon Esports,0,2240,0,2240
+NA team,0,0,500,500
+SA team,0,0,2200,2200
 WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
 EEU team,0,0,0,0
-MENA team,0,0,250,250
+MENA team,0,0,0,0
 China team,0,0,6000,6000
-SEA team,0,0,0,0
+SEA team,0,0,5000,5000
 
 Optimising for SEA team
-Rank 8 1win had 6442 points
+Rank 8 SEA team had 6000 points
 Objective value: 6000.0
-BetBoom Team,7500,1040,500,9040
-Xtreme Gaming,6160,280,250,6690
-Team Falcons,5880,4000,250,10130
-Gaimin Gladiators,5680,560,4000,10240
-Team Spirit,4640,280,0,4920
-Team Liquid,3298,2240,1000,6538
-OG,2296,0,2200,4496
-G2 x iG,1722,560,0,2282
-Shopify Rebellion,840,4800,1000,6640
-Team Secret,721,0,0,721
+BetBoom Team,7500,280,250,8030
+Xtreme Gaming,6160,4000,500,10660
+Team Falcons,5880,2240,1000,9120
+Gaimin Gladiators,5680,3200,3200,12080
+Team Spirit,4640,560,0,5200
+Team Liquid,3298,6400,0,9698
+OG,2296,0,0,2296
+G2 x iG,1722,4800,0,6522
+Shopify Rebellion,840,1040,0,1880
+Team Secret,721,0,2200,2921
 Aurora Gaming,660,0,0,660
 Entity,616,0,0,616
 LGD Gaming,420,0,0,420
 Blacklist International,420,0,0,420
 Virtus.pro,350,0,0,350
-Tundra Esports,350,6400,0,6750
+Tundra Esports,350,1040,5000,6390
 Azure Ray,175,0,500,675
-PSG Quest,100,0,5000,5100
-HEROIC,98,2240,2200,4538
-1win,42,3200,3200,6442
-Talon Esports,0,1040,0,1040
-NA team,0,0,0,0
-SA team,0,0,0,0
+PSG Quest,100,0,1000,1100
+HEROIC,98,560,0,658
+1win,42,2240,250,2532
+Talon Esports,0,280,0,280
+NA team,0,0,2200,2200
+SA team,0,0,4000,4000
 WEU team 1,0,0,0,0
 WEU team 2,0,0,0,0
 EEU team,0,0,0,0
