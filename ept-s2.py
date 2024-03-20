@@ -89,7 +89,7 @@ class Model:
     sea_qualifier = ['Aurora', 'Talon Esports', 'Blacklist International', 'SEA team']
 
     r_birmingham = (6400, 4800, 4000, 3200, 2240, 2240, 1040, 1040, 560, 560, 280, 280)
-    r_s23        = (6000, 5000, 4000, 3200, 2200, 2200, 1200, 800, 600, 400, 300, 250)
+    r_s23        = (6000, 5000, 4000, 3200, 2200, 2200, 1000, 1000, 500, 500, 250, 250)
     placements = 12
     model = cp_model.CpModel()
 
@@ -213,7 +213,7 @@ class Model:
                 print("==What does the threshold scenario look like?==")
                 print(f"This is the following scenario where {{{{Team|{get_team_name(team_to_optimise)}}}}} fail to qualify with {int(objectivevalue)} points.")
                 print()
-                print('{| class="wikitable sortable" style="font-size:85%; text-align: center;"')
+                print('{| class="wikitable" style="font-size:85%; text-align: center;"')
                 print('! Team || Initial || {{LeagueIconSmall/esl one|name=ESL One Birmingham 2024|link=ESL One/Birmingham/2024|date=2024-04-28}} || &hArr; || {{LeagueIconSmall/dreamleague|name=DreamLeague Season 23|link=DreamLeague/Season 23|date=2024-05-26}} || Total')
                 i = 0
                 for row in sortedmatrix:
@@ -245,8 +245,8 @@ class Model:
 def main():
     # Final constraint
     max_solution = [-1, -1]
-    for t in [1]:
-    #for t in range(len(Model().currentpoints)):
+    #for t in [1]:
+    for t in range(len(Model().currentpoints)):
         model = Model()
         print(f"Optimising for {list(model.currentpoints.keys())[t]}")
         ninth = model.optimise(t, False)
