@@ -91,6 +91,10 @@ class Model:
     r_birmingham = (6400, 4800, 4000, 3200, 2240, 2240, 1040, 1040, 560, 560, 280, 280)
     r_s23        = (6000, 5000, 4000, 3200, 2200, 2200, 1000, 1000, 500, 500, 250, 250)
     placements = 12
+
+    birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
+    s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators']
+    
     model = cp_model.CpModel()
 
     def team_index(self, t):
@@ -111,13 +115,13 @@ class Model:
         
         # ESL One Birmingham constraints
         # Qualified teams
-        birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
-        for t in birmingham_teams:
+        
+        for t in self.birmingham_teams:
             model.Add(sum(x_birmingham[self.team_index(t)]) == 1)
     
         # DreamLeague Season 23 constraints
         # Already-qualified teams
-        for t in ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators']:
+        for t in self.s23_teams:
             model.Add(sum(x_s23[self.team_index(t)]) == 1)
     
         # Regional constraints
@@ -130,7 +134,7 @@ class Model:
                 model.Add(sum(decisionvariable[teamindex]) <= 1)
                 regional_sum += sum(decisionvariable[teamindex])
             model.Add(regional_sum == numberofqualifedteams)
-        
+
         add_regional_constraint(self.na_qualifier, 1, x_s23, model)
         add_regional_constraint(self.sa_qualifier, 1, x_s23, model)
         add_regional_constraint(self.weu_qualifier, 2, x_s23, model)
@@ -165,22 +169,43 @@ class Model:
             ranks[i] = sum(aux[(i, j)] for j in range(teams))
         return [model, x_birmingham, x_s23, d_birmingham, d_s23, d, aux, ranks]
     
-    def optimise(self, team_to_optimise, show_all):
+    def optimise(self, team_to_optimise, show_all, maxobjectivevalue):
         teams = self.teams
         teamlist = self.teamlist
         currentpoints = self.currentpoints
         
         [model, x_birmingham, x_s23, d_birmingham, d_s23, d, aux, ranks] = self.build()
+        
         model.Add(ranks[team_to_optimise] > 8)
         model.Maximize(d[team_to_optimise])
 
         def flatten_array(a):
             return reduce(lambda z, y :z + y, a)
         
+        # If this team can't breach the best maximum so far, don't bother
+        maxpointsobtainable = 0
+        if len(self.birmingham_teams) == self.placements:
+            if teamlist[team_to_optimise] in self.birmingham_teams:
+                maxpointsobtainable += self.r_birmingham[0]
+        else:
+            maxpointsobtainable += self.r_birmingham[0]
+
+        if len(self.s23_teams) == self.placements:
+            if teamlist[team_to_optimise] in self.s23_teams:
+                maxpointsobtainable += self.r_s23[0]
+        else:
+            maxpointsobtainable += self.r_s23[0]
+
+        maxpointsobtainable += self.currentpoints[self.teamlist[team_to_optimise]]
+        if maxpointsobtainable < maxobjectivevalue:
+            print(f"Skipping {teamlist[team_to_optimise]} as {maxpointsobtainable} < {maxobjectivevalue}")
+            return -1
+        
         solver = cp_model.CpSolver()
         status = solver.Solve(model)
         if status == cp_model.OPTIMAL:
             objectivevalue = solver.ObjectiveValue()
+            maxobjectivevalue = max(maxobjectivevalue, objectivevalue)
             
             # Print the solution
             if (show_all):
@@ -249,14 +274,14 @@ def main():
     for t in range(len(Model().currentpoints)):
         model = Model()
         print(f"Optimising for {list(model.currentpoints.keys())[t]}")
-        ninth = model.optimise(t, False)
+        ninth = model.optimise(t, False, max_solution[1])
         if ninth > 0:
             old_max_solution = max_solution[1]
             if old_max_solution < ninth:
                 max_solution = [t, max(old_max_solution, ninth)]
         print()
 
-    model.optimise(max_solution[0], True)
+    model.optimise(max_solution[0], True, max_solution[1])
     
     print("Done")
 
