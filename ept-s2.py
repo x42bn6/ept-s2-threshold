@@ -183,23 +183,24 @@ class Model:
             return reduce(lambda z, y :z + y, a)
         
         # If this team can't breach the best maximum so far, don't bother
-        maxpointsobtainable = 0
-        if len(self.birmingham_teams) == self.placements:
-            if teamlist[team_to_optimise] in self.birmingham_teams:
+        if not show_all:
+            maxpointsobtainable = 0
+            if len(self.birmingham_teams) == self.placements:
+                if teamlist[team_to_optimise] in self.birmingham_teams:
+                    maxpointsobtainable += self.r_birmingham[0]
+            else:
                 maxpointsobtainable += self.r_birmingham[0]
-        else:
-            maxpointsobtainable += self.r_birmingham[0]
-
-        if len(self.s23_teams) == self.placements:
-            if teamlist[team_to_optimise] in self.s23_teams:
+    
+            if len(self.s23_teams) == self.placements:
+                if teamlist[team_to_optimise] in self.s23_teams:
+                    maxpointsobtainable += self.r_s23[0]
+            else:
                 maxpointsobtainable += self.r_s23[0]
-        else:
-            maxpointsobtainable += self.r_s23[0]
-
-        maxpointsobtainable += self.currentpoints[self.teamlist[team_to_optimise]]
-        if maxpointsobtainable < maxobjectivevalue:
-            print(f"Skipping {teamlist[team_to_optimise]} as {maxpointsobtainable} < {maxobjectivevalue}")
-            return -1
+    
+            maxpointsobtainable += self.currentpoints[self.teamlist[team_to_optimise]]
+            if maxpointsobtainable < maxobjectivevalue:
+                print(f"Skipping {teamlist[team_to_optimise]} as {maxpointsobtainable} < {maxobjectivevalue}")
+                return -1
         
         solver = cp_model.CpSolver()
         status = solver.Solve(model)
