@@ -2,22 +2,22 @@ Optimising for BetBoom Team
 Objective value: 9060.0
 
 Optimising for Xtreme Gaming
-Objective value: 9400.0
+Objective value: 8920.0
 
 Optimising for Team Falcons
-Objective value: 9360.0
+Objective value: 9330.0
 
 Optimising for Gaimin Gladiators
-Objective value: 9380.0
+Objective value: 9160.0
 
 Optimising for Team Spirit
-Objective value: 9200.0
+Objective value: 8640.0
 
 Optimising for Team Liquid
 Objective value: 9338.000000000002
 
 Optimising for OG
-Skipping OG as 8296 < 9400.0
+Skipping OG as 8296 < 9338.000000000002
 
 Optimising for G2.iG
 Objective value: 9122.0
@@ -26,68 +26,68 @@ Optimising for Shopify Rebellion
 Objective value: 9080.0
 
 Optimising for Team Secret
-Skipping Team Secret as 6721 < 9400.0
+Skipping Team Secret as 6721 < 9338.000000000002
 
 Optimising for Aurora
-Skipping Aurora as 6660 < 9400.0
+Skipping Aurora as 6660 < 9338.000000000002
 
 Optimising for Entity
-Skipping Entity as 6616 < 9400.0
+Skipping Entity as 6616 < 9338.000000000002
 
 Optimising for LGD Gaming
-Skipping LGD Gaming as 6420 < 9400.0
+Skipping LGD Gaming as 6420 < 9338.000000000002
 
 Optimising for Blacklist International
-Skipping Blacklist International as 6420 < 9400.0
+Skipping Blacklist International as 6420 < 9338.000000000002
 
 Optimising for Virtus.pro
-Skipping Virtus.pro as 6350 < 9400.0
+Skipping Virtus.pro as 6350 < 9338.000000000002
 
 Optimising for Tundra Esports
 Objective value: 9350.0
 
 Optimising for Azure Ray
-Skipping Azure Ray as 6175 < 9400.0
+Skipping Azure Ray as 6175 < 9350.0
 
 Optimising for PSG Quest
-Skipping PSG Quest as 6100 < 9400.0
+Skipping PSG Quest as 6100 < 9350.0
 
 Optimising for HEROIC
 Objective value: 9298.000000000002
 
 Optimising for 1win
-Objective value: 9242.0
+Objective value: 6441.999999999998
 
 Optimising for Talon Esports
-Objective value: 9200.0
+Objective value: 6400.0
 
 Optimising for NA team
-Skipping NA team as 6000 < 9400.0
+Skipping NA team as 6000 < 9350.0
 
 Optimising for SA team
-Skipping SA team as 6000 < 9400.0
+Skipping SA team as 6000 < 9350.0
 
 Optimising for WEU team 1
-Skipping WEU team 1 as 6000 < 9400.0
+Skipping WEU team 1 as 6000 < 9350.0
 
 Optimising for WEU team 2
-Skipping WEU team 2 as 6000 < 9400.0
+Skipping WEU team 2 as 6000 < 9350.0
 
-Optimising for EEU team
-Skipping EEU team as 6000 < 9400.0
+Optimising for Natus Vincere
+Skipping Natus Vincere as 0 < 9350.0
 
 Optimising for MENA team
-Skipping MENA team as 6000 < 9400.0
+Skipping MENA team as 6000 < 9350.0
 
 Optimising for China team
-Skipping China team as 6000 < 9400.0
+Skipping China team as 6000 < 9350.0
 
 Optimising for SEA team
-Skipping SEA team as 6000 < 9400.0
+Skipping SEA team as 6000 < 9350.0
 
 Printing Liquipedia table
 ==What does the threshold scenario look like?==
-This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with 9400 points.
+This is the following scenario where {{Team|Tundra Esports}} fail to qualify with 9350 points.
 
 {| class="wikitable" style="font-size:85%; text-align: center;"
 ! Team || Initial || {{LeagueIconSmall/esl one|name=ESL One Birmingham 2024|link=ESL One/Birmingham/2024|date=2024-04-28}} || &hArr; || {{LeagueIconSmall/dreamleague|name=DreamLeague Season 23|link=DreamLeague/Season 23|date=2024-05-26}} || Total
@@ -99,27 +99,6 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | {{PlacementBg/1}} 6000
 | 9962
 |-
-!style="text-align: left;"| {{Team|HEROIC}}
-| 98
-| {{PlacementBg/2}} 4800
-|
-| {{PlacementBg/2}} 5000
-| 9898
-|-
-!style="text-align: left;"| {{Team|Team Spirit}}
-| 4640
-| 1040
-|
-| {{PlacementBg/3}} 4000
-| 9680
-|-
-!style="text-align: left;"| {{Team|Team Falcons}}
-| 5880
-| {{PlacementBg/4}} 3200
-|
-| 500
-| 9580
-|-
 !style="text-align: left;"| {{Team|BetBoom Team}}
 | 7500
 | 1040
@@ -129,16 +108,16 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 |-
 !style="text-align: left;"| {{Team|Team Liquid}}
 | 3298
+| 2240
+|
 | {{PlacementBg/3}} 4000
-|
-| 2200
-| 9498
+| 9538
 |-
-!style="text-align: left;"| {{Team|Gaimin Gladiators}}
-| 5680
-| 560
+!style="text-align: left;"| {{Team|Team Spirit}}
+| 4640
+| {{PlacementBg/2}} 4800
 |
-| {{PlacementBg/4}} 3200
+| 0
 | 9440
 |-
 !style="text-align: left;"| {{Team|Shopify Rebellion}}
@@ -148,14 +127,35 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 2200
 | 9440
 |-
-| colspan="99" | Top 8 cutoff
-|-
 !style="text-align: left;"| {{Team|Xtreme Gaming}}
 | 6160
-| 2240
+| 1040
 |
-| 1000
-| style="font-weight: bold; color: var(--achievement-placement-down, #cd5b5b);" | 9400
+| 2200
+| 9400
+|-
+!style="text-align: left;"| {{Team|Gaimin Gladiators}}
+| 5680
+| {{PlacementBg/4}} 3200
+|
+| 500
+| 9380
+|-
+!style="text-align: left;"| {{Team|Team Falcons}}
+| 5880
+| 280
+|
+| {{PlacementBg/4}} 3200
+| 9360
+|-
+| colspan="99" | Top 8 cutoff
+|-
+!style="text-align: left;"| {{Team|Tundra Esports}}
+| 350
+| {{PlacementBg/3}} 4000
+|
+| {{PlacementBg/2}} 5000
+| style="font-weight: bold; color: var(--achievement-placement-down, #cd5b5b);" | 9350
 |-
 !style="text-align: left;"| {{Team|OG}}
 | 2296
@@ -164,6 +164,13 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 0
 | 2296
 |-
+!style="text-align: left;"| {{Team|Aurora}}
+| 660
+| 0
+|
+| 1000
+| 1660
+|-
 !style="text-align: left;"| {{Team|Team Secret}}
 | 721
 | 0
@@ -171,19 +178,12 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 0
 | 721
 |-
-!style="text-align: left;"| {{Team|Aurora}}
-| 660
-| 0
+!style="text-align: left;"| {{Team|HEROIC}}
+| 98
+| 560
 |
 | 0
-| 660
-|-
-!style="text-align: left;"| {{Team|Tundra Esports}}
-| 350
-| 280
-|
-| 0
-| 630
+| 658
 |-
 !style="text-align: left;"| {{Team|Entity}}
 | 616
@@ -192,14 +192,14 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 0
 | 616
 |-
-!style="text-align: left;"| {{Team|Talon Esports}}
-| 0
+!style="text-align: left;"| {{Team|1win}}
+| 42
 | 560
 |
 | 0
-| 560
+| 602
 |-
-!style="text-align: left;"| WEU team 1 with 0 EPT points
+!style="text-align: left;"| SA team with 0 EPT points
 | 0
 | 0
 |
@@ -227,21 +227,21 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 0
 | 350
 |-
-!style="text-align: left;"| {{Team|1win}}
-| 42
+!style="text-align: left;"| {{Team|PSG Quest}}
+| 100
+| 0
+|
+| 250
+| 350
+|-
+!style="text-align: left;"| {{Team|Talon Esports}}
+| 0
 | 280
 |
 | 0
-| 322
+| 280
 |-
-!style="text-align: left;"| MENA team with 0 EPT points
-| 0
-| 0
-|
-| 250
-| 250
-|-
-!style="text-align: left;"| SEA team with 0 EPT points
+!style="text-align: left;"| {{Team|Natus Vincere}}
 | 0
 | 0
 |
@@ -255,13 +255,6 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 0
 | 175
 |-
-!style="text-align: left;"| {{Team|PSG Quest}}
-| 100
-| 0
-|
-| 0
-| 100
-|-
 !style="text-align: left;"| NA team with 0 EPT points
 | 0
 | 0
@@ -269,7 +262,7 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 0
 | 0
 |-
-!style="text-align: left;"| SA team with 0 EPT points
+!style="text-align: left;"| WEU team 1 with 0 EPT points
 | 0
 | 0
 |
@@ -283,7 +276,7 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 | 0
 | 0
 |-
-!style="text-align: left;"| EEU team with 0 EPT points
+!style="text-align: left;"| MENA team with 0 EPT points
 | 0
 | 0
 |
@@ -296,6 +289,13 @@ This is the following scenario where {{Team|Xtreme Gaming}} fail to qualify with
 |
 | 0
 | 0
+|-
+!style="text-align: left;"| SEA team with 0 EPT points
+| 0
+| 0
+|
+| 0
+| 0
 |}
-Objective value: 9400.0
+Objective value: 9350.0
 Done
