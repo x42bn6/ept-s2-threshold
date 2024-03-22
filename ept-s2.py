@@ -1,10 +1,3 @@
-# Inspired by this: https://tkunt.medium.com/computing-bounds-for-ranks-and-ti-qualification-of-the-dpc-2023-tour-3-870957df4ec5
-# Disclaimer:
-# - I'm not sure if this is correct
-# - I have little experience with optimisation
-# - I am not a Python developer (don't judge my code style please)
-# I used OR-Tools instead of Gurobi, as I ran into license restrictions, and I'm not forking over 4 figures for it.
-
 from ortools.sat.python import cp_model
 import csv
 import sys
@@ -72,10 +65,11 @@ class Model:
             'SA team': 0,
             'WEU team 1': 0,
             'WEU team 2': 0,
-            'EEU team': 0,
+            #'EEU team': 0,
+            'Natus Vincere': 0,
             'MENA team': 0,
             'China team': 0,
-            'SEA team': 0
+            'SEA team': 0,
         }
     teams = len(currentpoints)
     teamlist = list(currentpoints.keys())
@@ -93,7 +87,7 @@ class Model:
     placements = 12
 
     birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
-    s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators']
+    s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Aurora', 'Natus Vincere']
     
     model = cp_model.CpModel()
 
@@ -138,10 +132,10 @@ class Model:
         add_regional_constraint(self.na_qualifier, 1, x_s23, model)
         add_regional_constraint(self.sa_qualifier, 1, x_s23, model)
         add_regional_constraint(self.weu_qualifier, 2, x_s23, model)
-        add_regional_constraint(self.eeu_qualifier, 1, x_s23, model)
+        #add_regional_constraint(self.eeu_qualifier, 1, x_s23, model)
         add_regional_constraint(self.mena_qualifier, 1, x_s23, model)
         add_regional_constraint(self.china_qualifier, 1, x_s23, model)
-        add_regional_constraint(self.sea_qualifier, 1, x_s23, model)
+        #add_regional_constraint(self.sea_qualifier, 1, x_s23, model)
     
         # One placement per team
         for p in range(placements):
@@ -184,6 +178,7 @@ class Model:
         
         # If this team can't breach the best maximum so far, don't bother
         if not show_all:
+            teamname = teamlist[team_to_optimise]
             maxpointsobtainable = 0
             if len(self.birmingham_teams) == self.placements:
                 if teamlist[team_to_optimise] in self.birmingham_teams:
@@ -192,9 +187,9 @@ class Model:
                 maxpointsobtainable += self.r_birmingham[0]
     
             if len(self.s23_teams) == self.placements:
-                if teamlist[team_to_optimise] in self.s23_teams:
+                if teamname in self.s23_teams:
                     maxpointsobtainable += self.r_s23[0]
-            else:
+            elif teamname in self.na_qualifier or teamname in self.sa_qualifier or teamname in self.weu_qualifier or teamname in self.eeu_qualifier or teamname in self.mena_qualifier or teamname in self.china_qualifier or teamname in self.sea_qualifier:
                 maxpointsobtainable += self.r_s23[0]
     
             maxpointsobtainable += self.currentpoints[self.teamlist[team_to_optimise]]
