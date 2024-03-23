@@ -154,7 +154,8 @@ class Model:
     placements = 12
 
     birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
-    s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Aurora', 'Natus Vincere']
+    s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', \
+                 'Aurora', 'Natus Vincere', 'Shopify Rebellion']
     
     model = cp_model.CpModel()
 
@@ -196,7 +197,7 @@ class Model:
                 regional_sum += sum(decisionvariable[teamindex])
             model.Add(regional_sum == numberofqualifedteams)
 
-        add_regional_constraint(self.na_qualifier, 1, x_s23, model)
+        #add_regional_constraint(self.na_qualifier, 1, x_s23, model)
         add_regional_constraint(self.sa_qualifier, 1, x_s23, model)
         add_regional_constraint(self.weu_qualifier, 2, x_s23, model)
         #add_regional_constraint(self.eeu_qualifier, 1, x_s23, model)
