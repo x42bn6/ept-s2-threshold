@@ -1,12 +1,6 @@
 Optimising for BetBoom Team
 Objective value: 9060.0
 
-Optimising for Xtreme Gaming
-Objective value: 8920.0
-
-Optimising for Team Falcons
-Objective value: 9330.0
-
 Optimising for Gaimin Gladiators
 Objective value: 9160.0
 
@@ -19,47 +13,53 @@ Objective value: 9338.000000000002
 Optimising for OG
 Skipping OG as 8296 < 9338.000000000002
 
-Optimising for G2.iG
-Objective value: 9122.0
-
 Optimising for Shopify Rebellion
 Objective value: 9080.0
-
-Optimising for Team Secret
-Skipping Team Secret as 6721 < 9338.000000000002
-
-Optimising for Aurora
-Skipping Aurora as 6660 < 9338.000000000002
 
 Optimising for Entity
 Skipping Entity as 6616 < 9338.000000000002
 
-Optimising for LGD Gaming
-Skipping LGD Gaming as 6420 < 9338.000000000002
-
-Optimising for Blacklist International
-Skipping Blacklist International as 6420 < 9338.000000000002
-
-Optimising for Virtus.pro
-Skipping Virtus.pro as 6350 < 9338.000000000002
-
 Optimising for Tundra Esports
 Objective value: 9350.0
-
-Optimising for Azure Ray
-Skipping Azure Ray as 6175 < 9350.0
 
 Optimising for PSG Quest
 Skipping PSG Quest as 6100 < 9350.0
 
+Optimising for Talon Esports
+Objective value: 6400.0
+
+Optimising for Aurora
+Skipping Aurora as 6660 < 9350.0
+
+Optimising for Team Falcons
+Objective value: 9330.0
+
+Optimising for G2.iG
+Objective value: 9122.0
+
+Optimising for Team Secret
+Skipping Team Secret as 6721 < 9350.0
+
+Optimising for Blacklist International
+Skipping Blacklist International as 6420 < 9350.0
+
+Optimising for LGD Gaming
+Skipping LGD Gaming as 6420 < 9350.0
+
+Optimising for Azure Ray
+Skipping Azure Ray as 6175 < 9350.0
+
+Optimising for Xtreme Gaming
+Objective value: 8920.0
+
 Optimising for HEROIC
 Objective value: 9298.000000000002
 
+Optimising for Virtus.pro
+Skipping Virtus.pro as 6350 < 9350.0
+
 Optimising for 1win
 Objective value: 6441.999999999998
-
-Optimising for Talon Esports
-Objective value: 6400.0
 
 Optimising for NA team
 Skipping NA team as 6000 < 9350.0
@@ -90,212 +90,398 @@ Printing Liquipedia table
 This is the following scenario where {{Team|Tundra Esports}} fail to qualify with 9350 points.
 
 {| class="wikitable" style="font-size:85%; text-align: center;"
-! Team || Initial || {{LeagueIconSmall/esl one|name=ESL One Birmingham 2024|link=ESL One/Birmingham/2024|date=2024-04-28}} || &hArr; || {{LeagueIconSmall/dreamleague|name=DreamLeague Season 23|link=DreamLeague/Season 23|date=2024-05-26}} || Total
+!style="min-width:40px"|'''Place'''
+!style="min-width:200px"|'''Team'''
+!style="min-width:50px"|'''Point'''
+|rowspan=99|
+!style="min-width:50px"|{{LeagueIconSmall/dreamleague|name=DreamLeague Season 21|link=DreamLeague/Season 21|date=2023-09-24}}
+!style="min-width:50px; font-size: larger;"|<span title="Point changes between DreamLeague Season 21 and ESL One Kuala Lumpur 2023">&hArr;</span>
+!style="min-width:50px"|{{LeagueIconSmall/esl one|name=ESL One Kuala Lumpur 2023|link=ESL One/Kuala Lumpur/2023|date=2023-12-17}}
+!style="min-width:50px; font-size: larger;"|<span title="Point changes between ESL One Kuala Lumpur 2023 and DreamLeague Season 22">&hArr;</span>
+!style="min-width:50px"|{{LeagueIconSmall/dreamleague|name=DreamLeague Season 22|link=DreamLeague/Season 22|date=2024-03-10}}
+!style="min-width:50px; font-size: larger;"|<span title="Point changes between DreamLeague Season 22 and ESL One Birmingham 2024">&hArr;</span>
+!style="min-width:50px"|{{LeagueIconSmall/esl one|name=ESL One Birmingham 2024|link=ESL One/Birmingham/2024|date=2024-04-28}}
+!style="min-width:50px; font-size: larger;"|<span title="Point changes between ESL One Birmingham 2024 and DreamLeague Season 23">&hArr;</span>
+!style="min-width:50px"|{{LeagueIconSmall/dreamleague|name=DreamLeague Season 23|link=DreamLeague/Season 23|date=2024-05-26}}
 |-
+| 1
 !style="text-align: left;"| {{Team|G2.iG}}
-| 1722
+| '''9962'''
+| 
+| 
+| 1680
+| 
+| 42
+| 
 | 2240
-|
+| 
 | {{PlacementBg/1}} 6000
-| 9962
 |-
+| 2
 !style="text-align: left;"| {{Team|BetBoom Team}}
-| 7500
+| '''9540'''
+| {{PlacementBg/3}} 1600
+| 
+| {{PlacementBg/4}} 2400
+| 
+| {{PlacementBg/2}} 3500
+| 
 | 1040
-|
+| 
 | 1000
-| 9540
 |-
+| 3
 !style="text-align: left;"| {{Team|Team Liquid}}
-| 3298
+| '''9538'''
+| 200
+| 
+| {{PlacementBg/3}} 3000
+| 
+| 98
+| 
 | 2240
-|
+| 
 | {{PlacementBg/3}} 4000
-| 9538
 |-
+| 4
 !style="text-align: left;"| {{Team|Team Spirit}}
-| 4640
+| '''9440'''
+| {{PlacementBg/1}} 2400
+| 
+| 
+| 
+| {{PlacementBg/4}} 2240
+| 
 | {{PlacementBg/2}} 4800
-|
-| 0
-| 9440
+| 
+| 
 |-
+| 5
 !style="text-align: left;"| {{Team|Shopify Rebellion}}
+| '''9440'''
+| {{PlacementBg/2}} 2000
+| -2000
+| 
+| 
 | 840
+| 
 | {{PlacementBg/1}} 6400
-|
+| 
 | 2200
-| 9440
 |-
+| 6
 !style="text-align: left;"| {{Team|Xtreme Gaming}}
-| 6160
+| '''9400'''
+| 
+| 
+| 
+| +3360
+| {{PlacementBg/3}} 2800
+| 
 | 1040
-|
+| 
 | 2200
-| 9400
 |-
+| 7
 !style="text-align: left;"| {{Team|Gaimin Gladiators}}
-| 5680
+| '''9380'''
+| 400
+| 
+| {{PlacementBg/2}} 3600
+| 
+| 1680
+| 
 | {{PlacementBg/4}} 3200
-|
+| 
 | 500
-| 9380
 |-
+| 8
 !style="text-align: left;"| {{Team|Team Falcons}}
-| 5880
+| '''9360'''
+| 
+| 
+| 1680
+| 
+| {{PlacementBg/1}} 4200
+| 
 | 280
-|
+| 
 | {{PlacementBg/4}} 3200
-| 9360
 |-
 | colspan="99" | Top 8 cutoff
 |-
+| 9
 !style="text-align: left;"| {{Team|Tundra Esports}}
-| 350
-| {{PlacementBg/3}} 4000
-|
-| {{PlacementBg/2}} 5000
 | style="font-weight: bold; color: var(--achievement-placement-down, #cd5b5b);" | 9350
+| 880
+| -880
+| 780
+| -780
+| 350
+| 
+| {{PlacementBg/3}} 4000
+| 
+| {{PlacementBg/2}} 5000
 |-
+| 10
 !style="text-align: left;"| {{Team|OG}}
-| 2296
-| 0
-|
-| 0
-| 2296
+| '''2296'''
+| {{PlacementBg/4}} 1280
+| -384
+| 
+| 
+| 1400
+| 
+| 
+| 
+| 
 |-
+| 11
 !style="text-align: left;"| {{Team|Aurora}}
-| 660
-| 0
-|
-| 1000
-| 1660
-|-
-!style="text-align: left;"| {{Team|Team Secret}}
-| 721
-| 0
-|
-| 0
-| 721
-|-
-!style="text-align: left;"| {{Team|HEROIC}}
-| 98
+| '''1160'''
+| 
+| +100
+| 
+| 
 | 560
-|
-| 0
-| 658
-|-
-!style="text-align: left;"| {{Team|Entity}}
-| 616
-| 0
-|
-| 0
-| 616
-|-
-!style="text-align: left;"| {{Team|1win}}
-| 42
-| 560
-|
-| 0
-| 602
-|-
-!style="text-align: left;"| SA team with 0 EPT points
-| 0
-| 0
-|
-| 500
+| 
+| 
+| 
 | 500
 |-
-!style="text-align: left;"| {{Team|LGD Gaming}}
-| 420
-| 0
-|
-| 0
-| 420
-|-
-!style="text-align: left;"| {{Team|Blacklist International}}
-| 420
-| 0
-|
-| 0
-| 420
-|-
-!style="text-align: left;"| {{Team|Virtus.pro}}
-| 350
-| 0
-|
-| 0
-| 350
-|-
+| 12
 !style="text-align: left;"| {{Team|PSG Quest}}
+| '''1100'''
 | 100
-| 0
-|
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 1000
+|-
+| 13
+!style="text-align: left;"| {{Team|HEROIC}}
+| '''908'''
+| 
+| 
+| 
+| 
+| 98
+| 
+| 560
+| 
 | 250
+|-
+| 14
+!style="text-align: left;"| {{Team|Team Secret}}
+| '''721'''
+| 
+| 
+| 780
+| -234
+| 175
+| 
+| 
+| 
+| 
+|-
+| 15
+!style="text-align: left;"| {{Team|Entity}}
+| '''616'''
+| 880
+| -264
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+|-
+| 16
+!style="text-align: left;"| {{Team|1win}}
+| '''602'''
+| 
+| 
+| 
+| 
+| 42
+| 
+| 560
+| 
+| 
+|-
+| 17
+!style="text-align: left;"| {{Team|Blacklist International}}
+| '''420'''
+| 
+| 
+| 420
+| 
+| 
+| 
+| 
+| 
+| 
+|-
+| 18
+!style="text-align: left;"| {{Team|LGD Gaming}}
+| '''420'''
+| 
+| 
+| 420
+| 
+| 
+| 
+| 
+| 
+| 
+|-
+| 19
+!style="text-align: left;"| {{Team|Virtus.pro}}
+| '''350'''
+| 
+| 
+| 
+| 
 | 350
+| 
+| 
+| 
+| 
 |-
+| 20
 !style="text-align: left;"| {{Team|Talon Esports}}
-| 0
+| '''280'''
+| 100
+| -100
+| 
+| 
+| 
+| 
 | 280
-|
-| 0
-| 280
+| 
+| 
 |-
+| 21
 !style="text-align: left;"| {{Team|Natus Vincere}}
-| 0
-| 0
-|
-| 250
+| '''250'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
 | 250
 |-
+| 22
 !style="text-align: left;"| {{Team|Azure Ray}}
+| '''175'''
+| 
+| 
+| {{PlacementBg/1}} 4800
+| -4800
 | 175
-| 0
-|
-| 0
-| 175
+| 
+| 
+| 
+| 
 |-
+| 23
 !style="text-align: left;"| NA team with 0 EPT points
-| 0
-| 0
-|
-| 0
-| 0
+| '''0'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
 |-
+| 24
+!style="text-align: left;"| SA team with 0 EPT points
+| '''0'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+|-
+| 25
 !style="text-align: left;"| WEU team 1 with 0 EPT points
-| 0
-| 0
-|
-| 0
-| 0
+| '''0'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
 |-
+| 26
 !style="text-align: left;"| WEU team 2 with 0 EPT points
-| 0
-| 0
-|
-| 0
-| 0
+| '''0'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
 |-
+| 27
 !style="text-align: left;"| MENA team with 0 EPT points
-| 0
-| 0
-|
-| 0
-| 0
+| '''0'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
 |-
+| 28
 !style="text-align: left;"| China team with 0 EPT points
-| 0
-| 0
-|
-| 0
-| 0
+| '''0'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
 |-
+| 29
 !style="text-align: left;"| SEA team with 0 EPT points
-| 0
-| 0
-|
-| 0
-| 0
+| '''0'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
 |}
 Objective value: 9350.0
 Done
