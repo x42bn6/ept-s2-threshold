@@ -354,7 +354,7 @@ class Model:
                     print(f'| {(i+1)}')
                     print(f'!style="text-align: left;"| {teamcomponent}')
                     if i == 8:
-                        print(f'| style="font-weight: bold; color: var(--achievement-placement-down, #cd5b5b);" | {row[10]}')
+                        print(f'| style="font-weight: bold; background-color: var(--achievement-placement-down, #cd5b5b);" | {row[10]}')
                     else:
                         print(f"| '''{row[10]}'''")
                     print(f"| {s21component}")
