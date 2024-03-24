@@ -270,7 +270,7 @@ class Model:
                         return ""
                     if points == 0:
                         return ""
-                    return points
+                    return round(points)
                 
                 def format_points_in_between(points):
                     if points == None:
@@ -313,7 +313,7 @@ class Model:
                 
                 print("Printing Liquipedia table")
                 print("==What does the threshold scenario look like?==")
-                print(f"This is the following scenario where {{{{Team|{get_team_name(team_to_optimise)}}}}} fail to qualify with {int(objectivevalue)} points.")
+                print(f"This is the following scenario where {{{{Team|{get_team_name(team_to_optimise)}}}}} fail to qualify with {round(objectivevalue)} points.")
                 print()
                 print('{| class="wikitable" style="font-size:85%; text-align: center;"')
                 print("!style=\"min-width:40px\"|'''Place'''")
@@ -340,8 +340,8 @@ class Model:
                     s21component = f"{get_placementbg(self.r_s21, row[1])}{row[1]}"
                     klcomponent = f"{get_placementbg(self.r_kl, row[3])}{row[3]}"
                     s22component = f"{get_placementbg(self.r_s22, row[5])}{row[5]}"
-                    birminghamcomponent = f"{get_placementbg(self.r_birmingham, row[7])}{format_points_tournament(row[7])}"
-                    s23component = f"{get_placementbg(self.r_s23, row[9])}{format_points_tournament(row[9])}"
+                    birminghamcomponent = f"{get_placementbg(self.r_birmingham, row[7])}{row[7]}"
+                    s23component = f"{get_placementbg(self.r_s23, row[9])}{row[9]}"
                     
                     print(f'| {(i+1)}')
                     print(f'!style="text-align: left;"| {teamcomponent}')
@@ -378,7 +378,7 @@ def main():
         if ninth > 0:
             old_max_solution = max_solution[1]
             if old_max_solution < ninth:
-                max_solution = [t, max(old_max_solution, ninth)]
+                max_solution = [t, round(max(old_max_solution, ninth))]
         print()
 
     model.optimise(max_solution[0], True, max_solution[1])
