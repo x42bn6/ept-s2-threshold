@@ -81,18 +81,26 @@ class Model:
         'Azure Ray': 175
     }
 
-    extra_teams = {
-        # Placeholder 0 EPT point teams in qualifier
+    # Placeholder 0 EPT point teams in qualifier
+    qualifier_teams = {
         #'NA team': 0,
+        'nouns': 0,
         'SA team': 0,
-        #'WEU team 1': 0,
-        #'WEU team 2': 0,
+        'WEU team 1': 0,
+        'WEU team 2': 0,
         #'EEU team': 0,
         'Natus Vincere': 0,
-        'MENA team': 0,
-        'China team': 0,
+        #'MENA team': 0,
+        'Nigma Galaxy': 0,
+        #'China team': 0,
+        'Team Zero': 0,
         #'SEA team': 0
+        'Geek Fam': 0
     }
+    qualifier_teams.pop('Geek Fam')
+    qualifier_teams.pop('WEU team 1')
+    qualifier_teams.pop('WEU team 2')
+    qualifier_teams.pop('nouns')
 
     points_s22_birmingham = {}
 
@@ -105,12 +113,12 @@ class Model:
         Counter_tweaked(points_kl) + Counter_tweaked(points_kl_s22) + \
         Counter_tweaked(points_s22) + Counter_tweaked(points_s22_birmingham) + \
         Counter_tweaked(points_birmingham_s23) + Counter_tweaked(points_s23_riyadh) + \
-        Counter_tweaked(extra_teams)
+        Counter_tweaked(qualifier_teams)
     teams = len(currentpoints)
     teamlist = list(currentpoints.keys())
 
-    na_qualifier = ['Shopify Rebellion', 'NA team']
-    na_qualifier.remove('NA team')
+    na_qualifier = ['Shopify Rebellion', 'nouns']
+    na_qualifier.remove('nouns')
     na_qualifier.remove('Shopify Rebellion')
     sa_qualifier = ['HEROIC', 'SA team']
     weu_qualifier = ['Team Liquid', 'OG', 'Team Secret', 'Entity', 'Tundra Esports', 'WEU team 1', 'WEU team 2']
@@ -122,13 +130,13 @@ class Model:
     eeu_qualifier.remove('Team Spirit')
     eeu_qualifier.remove('1win')
     eeu_qualifier.remove('Virtus.pro')
-    mena_qualifier = ['PSG Quest', 'MENA team']
-    china_qualifier = ['G2.iG', 'LGD Gaming', 'Azure Ray', 'China team']
+    mena_qualifier = ['PSG Quest', 'Nigma Galaxy']
+    china_qualifier = ['G2.iG', 'LGD Gaming', 'Azure Ray', 'Team Zero']
     china_qualifier.remove('LGD Gaming')
     china_qualifier.remove('G2.iG')
-    sea_qualifier = ['Aurora', 'Talon Esports', 'Blacklist International', 'SEA team']
+    sea_qualifier = ['Aurora', 'Talon Esports', 'Blacklist International', 'Geek Fam']
     sea_qualifier.remove('Blacklist International')
-    sea_qualifier.remove('SEA team')
+    sea_qualifier.remove('Geek Fam')
     sea_qualifier.remove('Talon Esports')
     sea_qualifier.remove('Aurora')
 
