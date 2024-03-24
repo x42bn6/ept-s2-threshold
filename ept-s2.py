@@ -19,35 +19,6 @@ class Counter_tweaked(Counter):
                     result[elem] = count
             return result
 
-class EptSolutionPrinter(cp_model.CpSolverSolutionCallback):
-    """Print intermediate solutions."""
-
-    def __init__(self, currentpoints, d_birmingham: list[cp_model.IntVar], d_s23: list[cp_model.IntVar], d: list[cp_model.IntVar]):
-        cp_model.CpSolverSolutionCallback.__init__(self)
-        self.__currentpoints = currentpoints
-        self.__d_birmingham = d_birmingham
-        self.__d_s23 = d_s23
-        self.__d = d
-        self.__solution_count = 0
-
-    def on_solution_callback(self) -> None:
-        self.__solution_count += 1
-        teamcount = len(self.__currentpoints)
-        mat = [[0] * 5] * teamcount
-        for t in range(teamcount):
-            mat[t] = [0] * 5
-            mat[t][0] = list(self.__currentpoints.keys())[t]
-            mat[t][1] = list(self.__currentpoints.values())[t]
-            mat[t][2] = self.value(self.__d_birmingham[t])
-            mat[t][3] = self.value(self.__d_s23[t])
-            mat[t][4] = self.value(self.__d[t])
-        print(np.matrix(sorted(mat, key=lambda x: x[4], reverse=True)))
-        print()
-
-    @property
-    def solution_count(self) -> int:
-        return self.__solution_count
-
 class Model:
     points_s21 = {
         'BetBoom Team': 1600,
@@ -112,15 +83,15 @@ class Model:
 
     extra_teams = {
         # Placeholder 0 EPT point teams in qualifier
-        'NA team': 0,
+        #'NA team': 0,
         'SA team': 0,
-        'WEU team 1': 0,
-        'WEU team 2': 0,
+        #'WEU team 1': 0,
+        #'WEU team 2': 0,
         #'EEU team': 0,
         'Natus Vincere': 0,
         'MENA team': 0,
         'China team': 0,
-        'SEA team': 0
+        #'SEA team': 0
     }
 
     points_s22_birmingham = {}
@@ -139,12 +110,27 @@ class Model:
     teamlist = list(currentpoints.keys())
 
     na_qualifier = ['Shopify Rebellion', 'NA team']
+    na_qualifier.remove('NA team')
+    na_qualifier.remove('Shopify Rebellion')
     sa_qualifier = ['HEROIC', 'SA team']
     weu_qualifier = ['Team Liquid', 'OG', 'Team Secret', 'Entity', 'Tundra Esports', 'WEU team 1', 'WEU team 2']
-    eeu_qualifier = ['Team Spirit', 'Virtus.pro', '1win', 'EEU team']
+    weu_qualifier.remove('Team Secret')
+    weu_qualifier.remove('WEU team 1')
+    weu_qualifier.remove('WEU team 2')
+    weu_qualifier.remove('Team Liquid')
+    eeu_qualifier = ['Team Spirit', 'Virtus.pro', '1win', 'Natus Vincere']
+    eeu_qualifier.remove('Team Spirit')
+    eeu_qualifier.remove('1win')
+    eeu_qualifier.remove('Virtus.pro')
     mena_qualifier = ['PSG Quest', 'MENA team']
     china_qualifier = ['G2.iG', 'LGD Gaming', 'Azure Ray', 'China team']
+    china_qualifier.remove('LGD Gaming')
+    china_qualifier.remove('G2.iG')
     sea_qualifier = ['Aurora', 'Talon Esports', 'Blacklist International', 'SEA team']
+    sea_qualifier.remove('Blacklist International')
+    sea_qualifier.remove('SEA team')
+    sea_qualifier.remove('Talon Esports')
+    sea_qualifier.remove('Aurora')
 
     r_s21        = (2400, 2000, 1600, 1280, 880,  880,  400,  400,  200, 200, 100, 100)
     r_kl         = (4800, 3600, 3000, 2400, 1680, 1680, 780,  780,  420, 420, 210, 210)
@@ -155,7 +141,7 @@ class Model:
 
     birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
     s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', \
-                 'Aurora', 'Natus Vincere', 'Shopify Rebellion']
+                 'Aurora', 'Natus Vincere', 'Shopify Rebellion', 'Team Liquid']
     
     model = cp_model.CpModel()
 
@@ -199,7 +185,8 @@ class Model:
 
         #add_regional_constraint(self.na_qualifier, 1, x_s23, model)
         add_regional_constraint(self.sa_qualifier, 1, x_s23, model)
-        add_regional_constraint(self.weu_qualifier, 2, x_s23, model)
+        #add_regional_constraint(self.weu_qualifier, 2, x_s23, model)
+        add_regional_constraint(self.weu_qualifier, 1, x_s23, model)
         #add_regional_constraint(self.eeu_qualifier, 1, x_s23, model)
         add_regional_constraint(self.mena_qualifier, 1, x_s23, model)
         add_regional_constraint(self.china_qualifier, 1, x_s23, model)
@@ -248,15 +235,11 @@ class Model:
         if not show_all:
             teamname = teamlist[team_to_optimise]
             maxpointsobtainable = 0
-            if len(self.birmingham_teams) == self.placements:
-                if teamlist[team_to_optimise] in self.birmingham_teams:
-                    maxpointsobtainable += self.r_birmingham[0]
-            else:
+            if teamname in self.birmingham_teams:
                 maxpointsobtainable += self.r_birmingham[0]
     
-            if len(self.s23_teams) == self.placements:
-                if teamname in self.s23_teams:
-                    maxpointsobtainable += self.r_s23[0]
+            if teamname in self.s23_teams:
+                maxpointsobtainable += self.r_s23[0]
             elif teamname in self.na_qualifier or teamname in self.sa_qualifier or teamname in self.weu_qualifier or teamname in self.eeu_qualifier or teamname in self.mena_qualifier or teamname in self.china_qualifier or teamname in self.sea_qualifier:
                 maxpointsobtainable += self.r_s23[0]
     
