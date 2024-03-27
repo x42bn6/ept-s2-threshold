@@ -85,7 +85,8 @@ class Model:
     qualifier_teams = {
         #'NA team': 0,
         'nouns': 0,
-        'SA team': 0,
+        #'SA team': 0,
+        'Estar_Backs': 0,
         'WEU team 1': 0,
         'WEU team 2': 0,
         #'EEU team': 0,
@@ -101,6 +102,9 @@ class Model:
     qualifier_teams.pop('WEU team 1')
     qualifier_teams.pop('WEU team 2')
     qualifier_teams.pop('nouns')
+    qualifier_teams.pop('Team Zero')
+    qualifier_teams.pop('Nigma Galaxy')
+    qualifier_teams.pop('Estar_Backs')
 
     points_s22_birmingham = {}
 
@@ -120,20 +124,28 @@ class Model:
     na_qualifier = ['Shopify Rebellion', 'nouns']
     na_qualifier.remove('nouns')
     na_qualifier.remove('Shopify Rebellion')
-    sa_qualifier = ['HEROIC', 'SA team']
+    sa_qualifier = ['HEROIC', 'Estar_Backs']
+    sa_qualifier.remove('HEROIC')
+    sa_qualifier.remove('Estar_Backs')
     weu_qualifier = ['Team Liquid', 'OG', 'Team Secret', 'Entity', 'Tundra Esports', 'WEU team 1', 'WEU team 2']
     weu_qualifier.remove('Team Secret')
     weu_qualifier.remove('WEU team 1')
     weu_qualifier.remove('WEU team 2')
     weu_qualifier.remove('Team Liquid')
+    weu_qualifier.remove('Entity')
+    weu_qualifier.remove('OG')
+    weu_qualifier.remove('Tundra Esports')
     eeu_qualifier = ['Team Spirit', 'Virtus.pro', '1win', 'Natus Vincere']
     eeu_qualifier.remove('Team Spirit')
     eeu_qualifier.remove('1win')
     eeu_qualifier.remove('Virtus.pro')
     mena_qualifier = ['PSG Quest', 'Nigma Galaxy']
+    mena_qualifier.remove('Nigma Galaxy')
+    mena_qualifier.remove('PSG Quest')
     china_qualifier = ['G2.iG', 'LGD Gaming', 'Azure Ray', 'Team Zero']
     china_qualifier.remove('LGD Gaming')
     china_qualifier.remove('G2.iG')
+    china_qualifier.remove('Team Zero')
     sea_qualifier = ['Aurora', 'Talon Esports', 'Blacklist International', 'Geek Fam']
     sea_qualifier.remove('Blacklist International')
     sea_qualifier.remove('Geek Fam')
@@ -149,7 +161,7 @@ class Model:
 
     birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
     s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', \
-                 'Aurora', 'Natus Vincere', 'Shopify Rebellion', 'Team Liquid']
+                 'Aurora', 'Natus Vincere', 'Shopify Rebellion', 'Team Liquid', 'Azure Ray', 'Tundra Esports', 'PSG Quest', 'HEROIC']
     
     model = cp_model.CpModel()
 
@@ -192,12 +204,11 @@ class Model:
             model.Add(regional_sum == numberofqualifedteams)
 
         #add_regional_constraint(self.na_qualifier, 1, x_s23, model)
-        add_regional_constraint(self.sa_qualifier, 1, x_s23, model)
+        #add_regional_constraint(self.sa_qualifier, 1, x_s23, model)
         #add_regional_constraint(self.weu_qualifier, 2, x_s23, model)
-        add_regional_constraint(self.weu_qualifier, 1, x_s23, model)
         #add_regional_constraint(self.eeu_qualifier, 1, x_s23, model)
-        add_regional_constraint(self.mena_qualifier, 1, x_s23, model)
-        add_regional_constraint(self.china_qualifier, 1, x_s23, model)
+        #add_regional_constraint(self.mena_qualifier, 1, x_s23, model)
+        #add_regional_constraint(self.china_qualifier, 1, x_s23, model)
         #add_regional_constraint(self.sea_qualifier, 1, x_s23, model)
     
         # One placement per team
