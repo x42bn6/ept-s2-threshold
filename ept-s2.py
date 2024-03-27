@@ -339,6 +339,7 @@ class Model:
                     return ""
                 
                 print("Printing Liquipedia table")
+                print()
                 print("==What does the threshold scenario look like?==")
                 print(f"This is the following scenario where {{{{Team|{get_team_name(team_to_optimise)}}}}} fail to qualify with {round(objectivevalue)} points.")
                 print()
