@@ -180,10 +180,26 @@ class Model:
         d_birmingham = [model.NewIntVar(0, 99999, f'd_birmingham_{i}') for i in range(teams)]
         d_s23        = [model.NewIntVar(0, 99999, f'd_s23_{i}') for i in range(teams)]
         d            = [model.NewIntVar(0, 99999, f'd_{i}') for i in range(teams)]
+
+        def team_can_no_longer_finish(tournament, team, position):
+            t = teamlist.index(team)
+            model.Add(tournament[t][position] == 0)
+
+        def team_finished(tournament, team, position):
+            t = teamlist.index(team)
+            model.Add(tournament[t][position] == 1)
+
+        # Add tournament constraints here
+        # param1 - x_birmingham or x_s23
+        # param2 - team name, exact case, space, etc. as above
+        # param3 - placement, 0-based (!!).  So 11th -> pass in 10
+        # If there is a joint placement (e.g. 5th-6th), do both
+        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 10)
+        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 11)
+        #team_finished(x_s23, 'Aurora', 0)
         
         # ESL One Birmingham constraints
         # Qualified teams
-        
         for t in self.birmingham_teams:
             model.Add(sum(x_birmingham[self.team_index(t)]) == 1)
     
