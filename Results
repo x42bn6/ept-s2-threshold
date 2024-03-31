@@ -1,3 +1,13 @@
+Requirement already satisfied: ortools in f:\development\python-3.12.2-embed-amd64\lib\site-packages (9.9.3963)
+Requirement already satisfied: absl-py>=2.0.0 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (2.1.0)
+Requirement already satisfied: numpy>=1.13.3 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (1.26.4)
+Requirement already satisfied: pandas>=2.0.0 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (2.2.1)
+Requirement already satisfied: protobuf>=4.25.3 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (5.26.0)
+Requirement already satisfied: immutabledict>=3.0.0 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (4.2.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from pandas>=2.0.0->ortools) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from pandas>=2.0.0->ortools) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from pandas>=2.0.0->ortools) (2024.1)
+Requirement already satisfied: six>=1.5 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from python-dateutil>=2.8.2->pandas>=2.0.0->ortools) (1.16.0)
 Optimising for BetBoom Team
 Objective value: 9060.0
 
@@ -11,69 +21,61 @@ Optimising for Team Liquid
 Objective value: 8738.0
 
 Optimising for OG
-Skipping OG as 8296 < 9060.0
+Skipping OG as 2296 < 9060
 
 Optimising for Shopify Rebellion
 Objective value: 8840.0
 
 Optimising for Entity
-Skipping Entity as 6616 < 9060.0
+Skipping Entity as 616 < 9060
 
 Optimising for Tundra Esports
 Objective value: 8950.0
 
 Optimising for PSG Quest
-Skipping PSG Quest as 6100 < 9060.0
+Skipping PSG Quest as 6100 < 9060
 
 Optimising for Talon Esports
-Skipping Talon Esports as 6400 < 9060.0
+Skipping Talon Esports as 6400 < 9060
 
 Optimising for Aurora
-Skipping Aurora as 6660 < 9060.0
+Skipping Aurora as 6660 < 9060
 
 Optimising for Team Falcons
 Objective value: 9120.0
 
 Optimising for G2.iG
-Skipping G2.iG as 8122 < 9120.0
+Skipping G2.iG as 8122 < 9120
 
 Optimising for Team Secret
-Skipping Team Secret as 721 < 9120.0
+Skipping Team Secret as 721 < 9120
 
 Optimising for Blacklist International
-Skipping Blacklist International as 420 < 9120.0
+Skipping Blacklist International as 420 < 9120
 
 Optimising for LGD Gaming
-Skipping LGD Gaming as 420 < 9120.0
+Skipping LGD Gaming as 420 < 9120
 
 Optimising for Azure Ray
-Skipping Azure Ray as 6175 < 9120.0
+Skipping Azure Ray as 6175 < 9120
 
 Optimising for Xtreme Gaming
 Objective value: 8920.0
 
 Optimising for HEROIC
-Objective value: 9098.000000000002
+Objective value: 9098.0
 
 Optimising for Virtus.pro
-Skipping Virtus.pro as 350 < 9120.0
+Skipping Virtus.pro as 350 < 9120
 
 Optimising for 1win
-Skipping 1win as 6442 < 9120.0
-
-Optimising for SA team
-Skipping SA team as 6000 < 9120.0
+Skipping 1win as 6442 < 9120
 
 Optimising for Natus Vincere
-Skipping Natus Vincere as 6000 < 9120.0
-
-Optimising for Nigma Galaxy
-Skipping Nigma Galaxy as 6000 < 9120.0
-
-Optimising for Team Zero
-Skipping Team Zero as 6000 < 9120.0
+Skipping Natus Vincere as 6000 < 9120
 
 Printing Liquipedia table
+
 ==What does the threshold scenario look like?==
 This is the following scenario where {{Team|Team Falcons}} fail to qualify with 9120 points.
 
@@ -153,9 +155,9 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | +3360
 | {{PlacementBg/3}} 2800
 | 
-| 2240
+| 1040
 | 
-| 1000
+| 2200
 |-
 | 6
 !style="text-align: left;"| {{Team|Tundra Esports}}
@@ -207,9 +209,9 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | {{PlacementBg/1}} 4200
 | 
-| 1040
+| 2240
 | 
-| 2200
+| 1000
 |-
 | 10
 !style="text-align: left;"| {{Team|OG}}
@@ -239,7 +241,7 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 |-
 | 12
 !style="text-align: left;"| {{Team|Aurora}}
-| '''910'''
+| '''1160'''
 | 
 | +100
 | 
@@ -248,7 +250,7 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 | 
-| 250
+| 500
 |-
 | 13
 !style="text-align: left;"| {{Team|Team Secret}}
@@ -264,6 +266,19 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 |-
 | 14
+!style="text-align: left;"| {{Team|Azure Ray}}
+| '''675'''
+| 
+| 
+| {{PlacementBg/1}} 4800
+| -4800
+| 175
+| 
+| 
+| 
+| 500
+|-
+| 15
 !style="text-align: left;"| {{Team|Entity}}
 | '''616'''
 | 880
@@ -276,7 +291,7 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 |-
-| 15
+| 16
 !style="text-align: left;"| {{Team|Talon Esports}}
 | '''560'''
 | 100
@@ -289,33 +304,7 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 |-
-| 16
-!style="text-align: left;"| {{Team|Nigma Galaxy}}
-| '''500'''
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 500
-|-
 | 17
-!style="text-align: left;"| {{Team|Team Zero}}
-| '''500'''
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 500
-|-
-| 18
 !style="text-align: left;"| {{Team|Blacklist International}}
 | '''420'''
 | 
@@ -328,7 +317,7 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 |-
-| 19
+| 18
 !style="text-align: left;"| {{Team|LGD Gaming}}
 | '''420'''
 | 
@@ -340,6 +329,19 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 | 
+|-
+| 19
+!style="text-align: left;"| {{Team|PSG Quest}}
+| '''350'''
+| 100
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 250
 |-
 | 20
 !style="text-align: left;"| {{Team|Virtus.pro}}
@@ -379,45 +381,5 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 | 250
-|-
-| 23
-!style="text-align: left;"| {{Team|Azure Ray}}
-| '''175'''
-| 
-| 
-| {{PlacementBg/1}} 4800
-| -4800
-| 175
-| 
-| 
-| 
-| 
-|-
-| 24
-!style="text-align: left;"| {{Team|PSG Quest}}
-| '''100'''
-| 100
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-|-
-| 25
-!style="text-align: left;"| SA team with 0 EPT points
-| '''0'''
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 
 |}
-Objective value: 9120.0
 Done
