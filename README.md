@@ -5,7 +5,7 @@ Most of the credit for this goes to "tkunt", who wrote [this article](https://tk
 
 The output of this is the threshold table in MediaWiki format, to be output [here](https://liquipedia.net/dota2/ESL_Pro_Tour/Leaderboard/Season_2_threshold_explanation#What_does_the_threshold_scenario_look_like?).
 
-##Disclaimers
+## Disclaimers
 
 - I am not a Python developer
 - I have limited experience with optimisation
