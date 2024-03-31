@@ -1,13 +1,7 @@
 !pip install ortools
-!pip install csv
-!pip install functools
-!pip install numpy
 
 from ortools.sat.python import cp_model
-import csv
 import sys
-from functools import reduce
-import numpy as np
 from enum import Enum
 from collections import Counter
 
