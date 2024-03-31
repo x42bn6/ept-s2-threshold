@@ -1,4 +1,3 @@
-# If running on Google CoLab, uncomment out these lines
 !pip install ortools
 !pip install csv
 !pip install functools
