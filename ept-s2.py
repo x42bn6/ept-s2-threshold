@@ -1,3 +1,9 @@
+# If running on Google CoLab, uncomment out these lines
+!pip install ortools
+!pip install csv
+!pip install functools
+!pip install numpy
+
 from ortools.sat.python import cp_model
 import csv
 import sys
