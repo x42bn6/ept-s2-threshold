@@ -434,8 +434,8 @@ class Model:
                            self.points_s21, self.points_s21_kl, self.points_kl, self.points_kl_s22, self.points_s22, self.points_s22_birmingham, d_birmingham, self.points_birmingham_s23, d_s23, self.points_s23_riyadh, d, \
                            self.currentpoints, solver, objectivevalue, team_to_optimise)
 
-    def tounsolvedmodel(self):
-        return tosolvedmodel(team_to_optimise, None, None, None, None, -1)
+    def tounsolvedmodel(self, team_to_optimise):
+        return self.tosolvedmodel(team_to_optimise, None, None, None, None, -1)
 
 def main():
     # Final constraint
