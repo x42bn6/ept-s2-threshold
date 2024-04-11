@@ -4,6 +4,7 @@ from ortools.sat.python import cp_model
 import sys
 from enum import Enum
 from collections import Counter
+import timeit
 
 class SolvedModel:
     def __init__(self, model, teamlist, \
@@ -291,7 +292,11 @@ class Model:
         self.r_s23        = (6000, 5000, 4000, 3200, 2200, 2200, 1000, 1000, 500, 500, 250, 250)
         self.placements = 12
     
-        self.birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
+        self.birmingham_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', \
+                                 'Team Spirit', 'Team Liquid', 'G2.iG', 'Shopify Rebellion', 'Tundra Esports', 'HEROIC', '1win', 'Talon Esports']
+        # 1win visa issues
+        self.birmingham_teams.append('OG')
+        self.birmingham_teams.remove('1win')
         self.s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', \
                      'Aurora', 'Natus Vincere', 'Shopify Rebellion', 'Team Liquid', 'Azure Ray', 'Tundra Esports', 'PSG Quest', 'HEROIC']
         
@@ -322,13 +327,22 @@ class Model:
             model.Add(tournament[t][position - 1] == 1)
 
         # Add tournament constraints here
+
+        # Team can no longer finish in a position
         # param1 - x_birmingham or x_s23
         # param2 - team name, exact case, space, etc. as above
         # param3 - placement, 1-based
         # If there is a joint placement (e.g. 5th-6th), do both
-        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 11)
-        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 12)
-        #team_finished(x_s23, 'BetBoom Team', 1)
+        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 5)
+        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 6)
+        
+        # Team guaranteed to finish in this position
+        # If using this, do not assign two teams to the same position.
+        # e.g. say BB and XG are both guaranteed to finish last in the group stage.  Do this:
+        #team_finished(x_s23, 'BetBoom Team', 11)
+        #team_finished(x_s23, 'Xtreme Gaming', 12)
+        # Don't assign BB to 11 and 12, or BB and XG both to 11.
+        # Arbitrarily pick different positions (same EPT points anyway) for both
         
         # ESL One Birmingham constraints
         # Qualified teams
