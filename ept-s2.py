@@ -122,6 +122,7 @@ class SolvedModel:
             
             print(f'| {(i+1)}')
             print(f'!style="text-align: left;"| {teamcomponent}')
+            
             if i == 8:
                 print(f'| style="font-weight: bold; background-color: var(--achievement-placement-down, #cd5b5b);" | {row[10]}')
             else:
@@ -343,6 +344,37 @@ class Model:
         #team_finished(x_s23, 'Xtreme Gaming', 12)
         # Don't assign BB to 11 and 12, or BB and XG both to 11.
         # Arbitrarily pick different positions (same EPT points anyway) for both
+
+        #############################
+        # ESL One Birmingham
+        #############################
+        # BetBoom Team
+
+        # Xtreme Gaming
+
+        # Team Falcons
+
+        # Gaimin Gladiators
+
+        # Team Spirit
+
+        # Team Liquid
+
+        # OG
+
+        # G2.iG
+
+        # Shopify Rebellion
+
+        # Tundra Esports
+
+        # HEROIC
+
+        # Talon Esports
+
+        #############################
+        # END ESL One Birmingham
+        #############################
         
         # ESL One Birmingham constraints
         # Qualified teams
