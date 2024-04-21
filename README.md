@@ -44,7 +44,7 @@ In this example, this states that BetBoom Team cannot finish last in their group
 
 This will become a long list.  However, say BetBoom Team finish 3rd.  All of these constraints can be replaced by:
 
-    team_finished(x_s23, 'BetBoom Team', 3)
+    team_finished(x_birmingham, 'BetBoom Team', 3)
 
 Which is much tidier.
 
