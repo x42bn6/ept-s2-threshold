@@ -30,7 +30,7 @@ I have created a new section in the script for ESL One Birmingham [here](https:/
 - As the tournament progresses, some teams will qualify to the next stage, progress to the top 6, then top 4, etc.  This means that they start to be unable to finish in lower positions.  So before a team has a final placement, we must eliminate all the positions below it.
 - Once a team has a final placement, however, it can be replaced entirely by a single "this team finished here" constraint.
 
-Thus to begin with, we must add statement like the following:
+Thus to begin with, we must add statements like the following:
 
     team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 11)
     team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 12)
