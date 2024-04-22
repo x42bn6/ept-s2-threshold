@@ -38,7 +38,7 @@ Some examples:
     team_can_finish_between(x_birmingham, 'OG', 3, 3)
 
     # Team Spirit will be eliminated from ESL One Birmingham, but we don't know if they will be last or second-last
-    team_can_finish_between(x_birmingham, 'Gaimin Gladiators', 9, 12)
+    team_can_finish_between(x_birmingham, 'Team Spirit', 9, 12)
     
     # Team Falcons finished in 5th-6th at DreamLeague Season 23:
     team_can_finish_between(x_s23, 'Team Falcons', 5, 6)
