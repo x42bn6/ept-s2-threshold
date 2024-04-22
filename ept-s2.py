@@ -319,62 +319,46 @@ class Model:
         d_s23        = [model.NewIntVar(0, 99999, f'd_s23_{i}') for i in range(teams)]
         d            = [model.NewIntVar(0, 99999, f'd_{i}') for i in range(teams)]
 
-        def team_can_no_longer_finish(tournament, team, position):
+        def team_can_finish_between(tournament, team, best, worst):
             t = teamlist.index(team)
-            model.Add(tournament[t][position - 1] == 0)
-
-        def team_finished(tournament, team, position):
-            t = teamlist.index(team)
-            model.Add(tournament[t][position - 1] == 1)
+            sum = 0
+            for i in range(best, worst + 1):
+                sum += tournament[t][i - 1]
+            model.Add(sum == 1)
 
         # Add tournament constraints here
-
-        # Team can no longer finish in a position
-        # param1 - x_birmingham or x_s23
-        # param2 - team name, exact case, space, etc. as above
-        # param3 - placement, 1-based
-        # If there is a joint placement (e.g. 5th-6th), do both
-        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 5)
-        #team_can_no_longer_finish(x_birmingham, 'BetBoom Team', 6)
-        
-        # Team guaranteed to finish in this position
-        # If using this, do not assign two teams to the same position.
-        # e.g. say BB and XG are both guaranteed to finish last in the group stage.  Do this:
-        #team_finished(x_s23, 'BetBoom Team', 11)
-        #team_finished(x_s23, 'Xtreme Gaming', 12)
-        # Don't assign BB to 11 and 12, or BB and XG both to 11.
-        # Arbitrarily pick different positions (same EPT points anyway) for both
 
         #############################
         # ESL One Birmingham
         #############################
-        # BetBoom Team
-
-        # Xtreme Gaming
-
-        # Team Falcons
-
-        # Gaimin Gladiators
-
-        # Team Spirit
-
-        # Team Liquid
-
-        # OG
-
-        # G2.iG
-
-        # Shopify Rebellion
-
-        # Tundra Esports
-
-        # HEROIC
-
-        # Talon Esports
+        team_can_finish_between(x_birmingham, 'BetBoom Team', 1, 12)
+        team_can_finish_between(x_birmingham, 'Xtreme Gaming', 1, 12)
+        team_can_finish_between(x_birmingham, 'Team Falcons', 1, 12)
+        team_can_finish_between(x_birmingham, 'Gaimin Gladiators', 1, 12)
+        team_can_finish_between(x_birmingham, 'Team Spirit', 1, 12)
+        team_can_finish_between(x_birmingham, 'Team Liquid', 1, 12)
+        team_can_finish_between(x_birmingham, 'OG', 1, 12)
+        team_can_finish_between(x_birmingham, 'G2.iG', 1, 12)
+        team_can_finish_between(x_birmingham, 'Shopify Rebellion', 1, 12)
+        team_can_finish_between(x_birmingham, 'Tundra Esports', 1, 12)
+        team_can_finish_between(x_birmingham, 'HEROIC', 1, 12)
+        team_can_finish_between(x_birmingham, 'Talon Esports', 1, 12)
 
         #############################
-        # END ESL One Birmingham
+        # DreamLeague Season 23
         #############################
+        team_can_finish_between(x_s23, 'BetBoom Team', 1, 12)
+        team_can_finish_between(x_s23, 'Xtreme Gaming', 1, 12)
+        team_can_finish_between(x_s23, 'Team Falcons', 1, 12)
+        team_can_finish_between(x_s23, 'Gaimin Gladiators', 1, 12)
+        team_can_finish_between(x_s23, 'Team Liquid', 1, 12)
+        team_can_finish_between(x_s23, 'Shopify Rebellion', 1, 12)
+        team_can_finish_between(x_s23, 'Aurora', 1, 12)
+        team_can_finish_between(x_s23, 'Tundra Esports', 1, 12)
+        team_can_finish_between(x_s23, 'HEROIC', 1, 12)
+        team_can_finish_between(x_s23, 'Azure Ray', 1, 12)
+        team_can_finish_between(x_s23, 'PSG Quest', 1, 12)
+        team_can_finish_between(x_s23, 'Natus Vincere', 1, 12)
         
         # ESL One Birmingham constraints
         # Qualified teams
