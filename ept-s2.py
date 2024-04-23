@@ -326,8 +326,24 @@ class Model:
                 sum += tournament[t][i - 1]
             model.Add(sum == 1)
 
-        # Add tournament constraints here
-
+        # Groups - two of each group are eliminated
+        # Only works for 6-team groups
+        # to_add is an offset so, say, group A last = 11th (to_add = 0), group B last = 12th (to_add = 1)
+        def add_group_constraint(tournament, group, to_add):
+            # One of these finishes second-last
+            sum = 0
+            for group_team in group:
+                t = teamlist.index(group_team)
+                sum += tournament[t][9 - 1 + to_add]
+            model.Add(sum == 1)
+            
+            # One of these finishes last
+            sum = 0
+            for group_team in group:
+                t = teamlist.index(group_team)
+                sum += tournament[t][11 - 1 + to_add]
+            model.Add(sum == 1)
+        
         #############################
         # ESL One Birmingham
         #############################
@@ -343,6 +359,11 @@ class Model:
         team_can_finish_between(x_birmingham, 'Tundra Esports', 1, 12)
         team_can_finish_between(x_birmingham, 'HEROIC', 1, 12)
         team_can_finish_between(x_birmingham, 'Talon Esports', 1, 12)
+
+        group_a = ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion']
+        add_group_constraint(x_birmingham, group_a, 0)
+        group_b = ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming']
+        add_group_constraint(x_birmingham, group_b, 1)
 
         #############################
         # DreamLeague Season 23
