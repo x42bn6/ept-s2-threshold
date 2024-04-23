@@ -21,7 +21,7 @@ Optimising for Team Liquid
 Objective value: 8738.0
 
 Optimising for OG
-Skipping OG as 2296 < 9060
+Skipping OG as 8696 < 9060
 
 Optimising for Shopify Rebellion
 Objective value: 8840.0
@@ -69,7 +69,7 @@ Optimising for Virtus.pro
 Skipping Virtus.pro as 350 < 9120
 
 Optimising for 1win
-Skipping 1win as 6442 < 9120
+Skipping 1win as 42 < 9120
 
 Optimising for Natus Vincere
 Skipping Natus Vincere as 6000 < 9120
@@ -215,27 +215,27 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 |-
 | 10
 !style="text-align: left;"| {{Team|OG}}
-| '''2296'''
+| '''2856'''
 | {{PlacementBg/4}} 1280
 | -384
 | 
 | 
 | 1400
 | 
-| 
+| 560
 | 
 | 
 |-
 | 11
 !style="text-align: left;"| {{Team|G2.iG}}
-| '''2282'''
+| '''2002'''
 | 
 | 
 | 1680
 | 
 | 42
 | 
-| 560
+| 280
 | 
 | 
 |-
@@ -266,19 +266,6 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 |-
 | 14
-!style="text-align: left;"| {{Team|Azure Ray}}
-| '''675'''
-| 
-| 
-| {{PlacementBg/1}} 4800
-| -4800
-| 175
-| 
-| 
-| 
-| 500
-|-
-| 15
 !style="text-align: left;"| {{Team|Entity}}
 | '''616'''
 | 880
@@ -290,6 +277,19 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 | 
+|-
+| 15
+!style="text-align: left;"| {{Team|PSG Quest}}
+| '''600'''
+| 100
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 500
 |-
 | 16
 !style="text-align: left;"| {{Team|Talon Esports}}
@@ -305,6 +305,19 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 |-
 | 17
+!style="text-align: left;"| {{Team|Azure Ray}}
+| '''425'''
+| 
+| 
+| {{PlacementBg/1}} 4800
+| -4800
+| 175
+| 
+| 
+| 
+| 250
+|-
+| 18
 !style="text-align: left;"| {{Team|Blacklist International}}
 | '''420'''
 | 
@@ -317,7 +330,7 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 |-
-| 18
+| 19
 !style="text-align: left;"| {{Team|LGD Gaming}}
 | '''420'''
 | 
@@ -329,19 +342,6 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 | 
-|-
-| 19
-!style="text-align: left;"| {{Team|PSG Quest}}
-| '''350'''
-| 100
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 250
 |-
 | 20
 !style="text-align: left;"| {{Team|Virtus.pro}}
@@ -357,19 +357,6 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 |-
 | 21
-!style="text-align: left;"| {{Team|1win}}
-| '''322'''
-| 
-| 
-| 
-| 
-| 42
-| 
-| 280
-| 
-| 
-|-
-| 22
 !style="text-align: left;"| {{Team|Natus Vincere}}
 | '''250'''
 | 
@@ -381,5 +368,18 @@ This is the following scenario where {{Team|Team Falcons}} fail to qualify with 
 | 
 | 
 | 250
+|-
+| 22
+!style="text-align: left;"| {{Team|1win}}
+| '''42'''
+| 
+| 
+| 
+| 
+| 42
+| 
+| 
+| 
+| 
 |}
 Done
