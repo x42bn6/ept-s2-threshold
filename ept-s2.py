@@ -365,7 +365,7 @@ class Model:
             model.Add(sum == 1)
 
         # 5th-6th matchups
-        def seventh_eighth(tournament, group, to_add):
+        def fifth_sixth(tournament, group, to_add):
             sum = 0
             for group_team in group:
                 t = teamlist.index(group_team)
