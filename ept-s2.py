@@ -393,6 +393,8 @@ class Model:
 
         seventh_eighth(x_birmingham, ['Team Liquid', 'HEROIC'], 0)
         seventh_eighth(x_birmingham, ['Xtreme Gaming', 'G2.iG'], 1)
+        fifth_sixth(x_birmingham, ['Team Falcons', 'Tundra Esports', 'Team Liquid', 'HEROIC'], 0)
+        fifth_sixth(x_birmingham, ['OG', 'BetBoom Team', 'Xtreme Gaming', 'G2.iG'], 1)
 
         #############################
         # DreamLeague Season 23
