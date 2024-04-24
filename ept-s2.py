@@ -152,6 +152,10 @@ class Counter_tweaked(Counter):
                     result[elem] = count
             return result
 
+class Tournament(Enum):
+    BIRMINGHAM = 1
+    S23 = 2
+
 class Model:
     def __init__(self):
         self.points_s21 = {
@@ -300,6 +304,9 @@ class Model:
         self.birmingham_teams.remove('1win')
         self.s23_teams = ['BetBoom Team', 'Xtreme Gaming', 'Team Falcons', 'Gaimin Gladiators', \
                      'Aurora', 'Natus Vincere', 'Shopify Rebellion', 'Team Liquid', 'Azure Ray', 'Tundra Esports', 'PSG Quest', 'HEROIC']
+
+        self.birmingham_highest = [-1 for i in range(self.teams)]
+        self.s23_highest = [-1 for i in range(self.teams)]
         
         self.model = cp_model.CpModel()
 
@@ -318,13 +325,18 @@ class Model:
         d_birmingham = [model.NewIntVar(0, 99999, f'd_birmingham_{i}') for i in range(teams)]
         d_s23        = [model.NewIntVar(0, 99999, f'd_s23_{i}') for i in range(teams)]
         d            = [model.NewIntVar(0, 99999, f'd_{i}') for i in range(teams)]
-
-        def team_can_finish_between(tournament, team, best, worst):
+        
+        def team_can_finish_between(tournament, tournament_enum, team, best, worst):
             t = teamlist.index(team)
             sum = 0
             for i in range(best, worst + 1):
                 sum += tournament[t][i - 1]
             model.Add(sum == 1)
+
+            if tournament_enum == Tournament.BIRMINGHAM:
+                self.birmingham_highest[t] = self.r_birmingham[best - 1]
+            elif tournament_enum == Tournament.S23:
+                self.s23_highest[t] = self.r_s23[best - 1]
 
         # Groups - two of each group are eliminated
         # Only works for 6-team groups
@@ -347,39 +359,37 @@ class Model:
         #############################
         # ESL One Birmingham
         #############################
-        team_can_finish_between(x_birmingham, 'BetBoom Team', 1, 12)
-        team_can_finish_between(x_birmingham, 'Xtreme Gaming', 1, 12)
-        team_can_finish_between(x_birmingham, 'Team Falcons', 1, 12)
-        team_can_finish_between(x_birmingham, 'Gaimin Gladiators', 1, 12)
-        team_can_finish_between(x_birmingham, 'Team Spirit', 1, 12)
-        team_can_finish_between(x_birmingham, 'Team Liquid', 1, 12)
-        team_can_finish_between(x_birmingham, 'OG', 1, 12)
-        team_can_finish_between(x_birmingham, 'G2.iG', 1, 12)
-        team_can_finish_between(x_birmingham, 'Shopify Rebellion', 1, 12)
-        team_can_finish_between(x_birmingham, 'Tundra Esports', 1, 12)
-        team_can_finish_between(x_birmingham, 'HEROIC', 1, 12)
-        team_can_finish_between(x_birmingham, 'Talon Esports', 1, 12)
-
-        group_a = ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion']
-        add_group_constraint(x_birmingham, group_a, 0)
-        group_b = ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming']
-        add_group_constraint(x_birmingham, group_b, 1)
+        add_group_constraint(x_birmingham, ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion'], 0)
+        add_group_constraint(x_birmingham, ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming'], 1)
+        
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'BetBoom Team', 1, 6)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Xtreme Gaming', 1, 8)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Team Falcons', 1, 6)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Gaimin Gladiators', 11, 12)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Team Spirit', 9, 10)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Team Liquid', 1, 8)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'OG', 1, 6)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'G2.iG', 1, 8)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Shopify Rebellion', 11, 12)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Tundra Esports', 1, 6)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'HEROIC', 1, 8)
+        team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Talon Esports', 9, 10)
 
         #############################
         # DreamLeague Season 23
         #############################
-        team_can_finish_between(x_s23, 'BetBoom Team', 1, 12)
-        team_can_finish_between(x_s23, 'Xtreme Gaming', 1, 12)
-        team_can_finish_between(x_s23, 'Team Falcons', 1, 12)
-        team_can_finish_between(x_s23, 'Gaimin Gladiators', 1, 12)
-        team_can_finish_between(x_s23, 'Team Liquid', 1, 12)
-        team_can_finish_between(x_s23, 'Shopify Rebellion', 1, 12)
-        team_can_finish_between(x_s23, 'Aurora', 1, 12)
-        team_can_finish_between(x_s23, 'Tundra Esports', 1, 12)
-        team_can_finish_between(x_s23, 'HEROIC', 1, 12)
-        team_can_finish_between(x_s23, 'Azure Ray', 1, 12)
-        team_can_finish_between(x_s23, 'PSG Quest', 1, 12)
-        team_can_finish_between(x_s23, 'Natus Vincere', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'BetBoom Team', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Xtreme Gaming', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Team Falcons', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Gaimin Gladiators', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Team Liquid', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Shopify Rebellion', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Aurora', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Tundra Esports', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'HEROIC', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Azure Ray', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'PSG Quest', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Natus Vincere', 1, 12)
         
         # ESL One Birmingham constraints
         # Qualified teams
@@ -455,10 +465,16 @@ class Model:
             teamname = teamlist[team_to_optimise]
             maxpointsobtainable = 0
             if teamname in self.birmingham_teams:
-                maxpointsobtainable += self.r_birmingham[0]
-    
+                if self.s23_highest[team_to_optimise] > 0:
+                    maxpointsobtainable += self.birmingham_highest[team_to_optimise]
+                else:
+                    maxpointsobtainable += self.r_birmingham[0]
+
             if teamname in self.s23_teams:
-                maxpointsobtainable += self.r_s23[0]
+                if self.s23_highest[team_to_optimise] > 0:
+                    maxpointsobtainable += self.s23_highest[team_to_optimise]
+                else:
+                    maxpointsobtainable += self.r_s23[0]
             elif teamname in self.na_qualifier or teamname in self.sa_qualifier or teamname in self.weu_qualifier or teamname in self.eeu_qualifier or teamname in self.mena_qualifier or teamname in self.china_qualifier or teamname in self.sea_qualifier:
                 maxpointsobtainable += self.r_s23[0]
     
