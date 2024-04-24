@@ -18,10 +18,10 @@ Optimising for Team Spirit
 Objective value: 5200.0
 
 Optimising for Team Liquid
-Objective value: 6998.0
+Objective value: 6538.0
 
 Optimising for OG
-Objective value: 7095.999999999999
+Objective value: 7096.000000000004
 
 Optimising for Shopify Rebellion
 Objective value: 7120.0
@@ -45,7 +45,7 @@ Optimising for Team Falcons
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for G2.iG
-Objective value: 6521.999999999998
+Objective value: 3961.999999999998
 
 Optimising for Team Secret
 Skipping Team Secret as 721 < 7120
@@ -63,7 +63,7 @@ Optimising for Xtreme Gaming
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for HEROIC
-Objective value: 7098.0
+Objective value: 6338.0
 
 Optimising for Virtus.pro
 Skipping Virtus.pro as 350 < 7120
@@ -96,57 +96,31 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 |-
 | 1
 !style="text-align: left;"| {{Team|BetBoom Team}}
-| '''10740'''
+| '''12900'''
 | {{PlacementBg/3}} 1600
 | 
 | {{PlacementBg/4}} 2400
 | 
 | {{PlacementBg/2}} 3500
 | 
-| 2240
+| {{PlacementBg/4}} 3200
 | 
-| 1000
+| 2200
 |-
 | 2
 !style="text-align: left;"| {{Team|Team Falcons}}
-| '''9580'''
+| '''10130'''
 | 
 | 
 | 1680
 | 
 | {{PlacementBg/1}} 4200
 | 
-| {{PlacementBg/4}} 3200
-| 
-| 500
-|-
-| 3
-!style="text-align: left;"| {{Team|Gaimin Gladiators}}
-| '''9160'''
-| 400
-| 
-| {{PlacementBg/2}} 3600
-| 
-| 1680
-| 
-| 280
-| 
-| {{PlacementBg/4}} 3200
-|-
-| 4
-!style="text-align: left;"| {{Team|HEROIC}}
-| '''9098'''
-| 
-| 
-| 
-| 
-| 98
-| 
 | {{PlacementBg/3}} 4000
 | 
-| {{PlacementBg/2}} 5000
+| 250
 |-
-| 5
+| 3
 !style="text-align: left;"| {{Team|OG}}
 | '''8696'''
 | {{PlacementBg/4}} 1280
@@ -159,35 +133,22 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 | 
 |-
-| 6
-!style="text-align: left;"| {{Team|Team Liquid}}
-| '''7738'''
-| 200
-| 
-| {{PlacementBg/3}} 3000
-| 
-| 98
-| 
-| 2240
-| 
-| 2200
-|-
-| 7
+| 4
 !style="text-align: left;"| {{Team|Xtreme Gaming}}
-| '''7700'''
+| '''8650'''
 | 
 | 
 | 
 | +3360
 | {{PlacementBg/3}} 2800
 | 
-| 1040
+| 2240
 | 
-| 500
+| 250
 |-
-| 8
+| 5
 !style="text-align: left;"| {{Team|Tundra Esports}}
-| '''7350'''
+| '''8350'''
 | 880
 | -880
 | 780
@@ -196,7 +157,46 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 | {{PlacementBg/2}} 4800
 | 
+| {{PlacementBg/4}} 3200
+|-
+| 6
+!style="text-align: left;"| {{Team|Team Liquid}}
+| '''8338'''
+| 200
+| 
+| {{PlacementBg/3}} 3000
+| 
+| 98
+| 
+| 1040
+| 
+| {{PlacementBg/3}} 4000
+|-
+| 7
+!style="text-align: left;"| {{Team|Gaimin Gladiators}}
+| '''8160'''
+| 400
+| 
+| {{PlacementBg/2}} 3600
+| 
+| 1680
+| 
+| 280
+| 
 | 2200
+|-
+| 8
+!style="text-align: left;"| {{Team|HEROIC}}
+| '''7338'''
+| 
+| 
+| 
+| 
+| 98
+| 
+| 2240
+| 
+| {{PlacementBg/2}} 5000
 |-
 | colspan="99" | Top 8 cutoff
 |-
@@ -227,19 +227,6 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 |-
 | 11
-!style="text-align: left;"| {{Team|Azure Ray}}
-| '''4175'''
-| 
-| 
-| {{PlacementBg/1}} 4800
-| -4800
-| 175
-| 
-| 
-| 
-| {{PlacementBg/3}} 4000
-|-
-| 12
 !style="text-align: left;"| {{Team|G2.iG}}
 | '''2762'''
 | 
@@ -251,6 +238,19 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 1040
 | 
 | 
+|-
+| 12
+!style="text-align: left;"| {{Team|Aurora}}
+| '''1660'''
+| 
+| +100
+| 
+| 
+| 560
+| 
+| 
+| 
+| 1000
 |-
 | 13
 !style="text-align: left;"| {{Team|Natus Vincere}}
@@ -266,19 +266,6 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 1000
 |-
 | 14
-!style="text-align: left;"| {{Team|Aurora}}
-| '''910'''
-| 
-| +100
-| 
-| 
-| 560
-| 
-| 
-| 
-| 250
-|-
-| 15
 !style="text-align: left;"| {{Team|Team Secret}}
 | '''721'''
 | 
@@ -290,6 +277,19 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 | 
 | 
+|-
+| 15
+!style="text-align: left;"| {{Team|Azure Ray}}
+| '''675'''
+| 
+| 
+| {{PlacementBg/1}} 4800
+| -4800
+| 175
+| 
+| 
+| 
+| 500
 |-
 | 16
 !style="text-align: left;"| {{Team|Entity}}
@@ -305,6 +305,19 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 |-
 | 17
+!style="text-align: left;"| {{Team|PSG Quest}}
+| '''600'''
+| 100
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 500
+|-
+| 18
 !style="text-align: left;"| {{Team|Talon Esports}}
 | '''560'''
 | 100
@@ -317,7 +330,7 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 | 
 |-
-| 18
+| 19
 !style="text-align: left;"| {{Team|Blacklist International}}
 | '''420'''
 | 
@@ -330,7 +343,7 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 | 
 |-
-| 19
+| 20
 !style="text-align: left;"| {{Team|LGD Gaming}}
 | '''420'''
 | 
@@ -342,19 +355,6 @@ This is the following scenario where {{Team|Shopify Rebellion}} fail to qualify 
 | 
 | 
 | 
-|-
-| 20
-!style="text-align: left;"| {{Team|PSG Quest}}
-| '''350'''
-| 100
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 250
 |-
 | 21
 !style="text-align: left;"| {{Team|Virtus.pro}}
