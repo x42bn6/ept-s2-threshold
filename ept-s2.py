@@ -356,8 +356,16 @@ class Model:
                 sum += tournament[t][11 - 1 + to_add]
             model.Add(sum == 1)
 
+        # 7th-8th matchups
+        def seventh_eighth(tournament, group, to_add):
+            sum = 0
+            for group_team in group:
+                t = teamlist.index(group_team)
+                sum += tournament[t][7 - 1 + to_add]
+            model.Add(sum == 1)
+
         # 5th-6th matchups
-        def fifth_sixth(tournament, group, to_add):
+        def seventh_eighth(tournament, group, to_add):
             sum = 0
             for group_team in group:
                 t = teamlist.index(group_team)
@@ -383,8 +391,8 @@ class Model:
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'HEROIC', 1, 8)
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Talon Esports', 9, 10)
 
-        fifth_sixth(x_birmingham, ['Team Liquid', 'HEROIC'], 0)
-        fifth_sixth(x_birmingham, ['Xtreme Gaming', 'G2.iG'], 1)
+        seventh_eighth(x_birmingham, ['Team Liquid', 'HEROIC'], 0)
+        seventh_eighth(x_birmingham, ['Xtreme Gaming', 'G2.iG'], 1)
 
         #############################
         # DreamLeague Season 23
