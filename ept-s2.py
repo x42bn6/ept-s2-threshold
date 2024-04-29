@@ -343,35 +343,18 @@ class Model:
         # to_add is an offset so, say, group A last = 11th (to_add = 0), group B last = 12th (to_add = 1)
         def add_group_constraint(tournament, group, to_add):
             # One of these finishes second-last
-            sum = 0
-            for group_team in group:
-                t = teamlist.index(group_team)
-                sum += tournament[t][9 - 1 + to_add]
-            model.Add(sum == 1)
+            one_of_these_teams_finishes_in(tournament, group, 9 + to_add)
 
             # One of these finishes last
+            one_of_these_teams_finishes_in(tournament, group, 11 + to_add)
+
+        def one_of_these_teams_finishes_in(tournament, group, position):
             sum = 0
             for group_team in group:
                 t = teamlist.index(group_team)
-                sum += tournament[t][11 - 1 + to_add]
+                sum += tournament[t][position - 1]
             model.Add(sum == 1)
-
-        # 7th-8th matchups
-        def seventh_eighth(tournament, group, to_add):
-            sum = 0
-            for group_team in group:
-                t = teamlist.index(group_team)
-                sum += tournament[t][7 - 1 + to_add]
-            model.Add(sum == 1)
-
-        # 5th-6th matchups
-        def fifth_sixth(tournament, group, to_add):
-            sum = 0
-            for group_team in group:
-                t = teamlist.index(group_team)
-                sum += tournament[t][5 - 1 + to_add]
-            model.Add(sum == 1)
-
+        
         #############################
         # ESL One Birmingham
         #############################
@@ -391,10 +374,10 @@ class Model:
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'HEROIC', 7, 8)
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Talon Esports', 9, 10)
 
-        seventh_eighth(x_birmingham, ['Team Liquid', 'HEROIC'], 0)
-        seventh_eighth(x_birmingham, ['Xtreme Gaming', 'G2.iG'], 1)
-        fifth_sixth(x_birmingham, ['Team Falcons', 'Tundra Esports', 'Team Liquid', 'HEROIC'], 0)
-        fifth_sixth(x_birmingham, ['OG', 'BetBoom Team', 'Xtreme Gaming', 'G2.iG'], 1)
+        one_of_these_teams_finishes_in(x_birmingham, ['Team Liquid', 'HEROIC'], 7)
+        one_of_these_teams_finishes_in(x_birmingham, ['Xtreme Gaming', 'G2.iG'], 8)
+        one_of_these_teams_finishes_in(x_birmingham, ['Team Falcons', 'Tundra Esports', 'Team Liquid', 'HEROIC'], 5)
+        one_of_these_teams_finishes_in(x_birmingham, ['OG', 'BetBoom Team', 'Xtreme Gaming', 'G2.iG'], 6)
 
         #############################
         # DreamLeague Season 23
@@ -486,7 +469,7 @@ class Model:
             teamname = teamlist[team_to_optimise]
             maxpointsobtainable = 0
             if teamname in self.birmingham_teams:
-                if self.s23_highest[team_to_optimise] > 0:
+                if self.birmingham_highest[team_to_optimise] > 0:
                     maxpointsobtainable += self.birmingham_highest[team_to_optimise]
                 else:
                     maxpointsobtainable += self.r_birmingham[0]
@@ -529,7 +512,7 @@ def main():
     max_team = -1
     max_solution = -1
     max_model = None
-    #for t in [11]:
+    #for t in [9]:
     for t in range(len(Model().currentpoints)):
         model = Model()
         print(f"Optimising for {list(model.currentpoints.keys())[t]}")
