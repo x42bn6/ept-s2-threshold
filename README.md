@@ -22,7 +22,7 @@ The output is a bunch of debugging statements, reflecting the threshold being co
 
     This is the following scenario where {{Team|Team Falcons}} fail to qualify with 9120 points.
 
-This means that the threshold, to put on [the leaderboard](https://liquipedia.net/dota2/ESL_Pro_Tour/Leaderboard), is &geq; 9120 (i.e. 9121).
+This means that the threshold, to put on [the leaderboard](https://liquipedia.net/dota2/ESL_Pro_Tour/Leaderboard), is > 9120 (i.e. 9121).
 
 ## Updating the script for results
 [These lines](https://github.com/x42bn6/ept-s2-threshold/blob/81538da0ae66e53062a24df27395e754a2e78404/ept-s2.py#L331-L361) need updating.
