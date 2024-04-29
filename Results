@@ -36,7 +36,7 @@ Optimising for PSG Quest
 Objective value: 5100.0
 
 Optimising for Talon Esports
-Objective value: 560.0000000000023
+Skipping Talon Esports as 560 < 5496
 
 Optimising for Aurora
 Objective value: 4659.999999999999
@@ -45,7 +45,7 @@ Optimising for Team Falcons
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for G2.iG
-Objective value: 3962.0000000000005
+Skipping G2.iG as 3962 < 5496
 
 Optimising for Team Secret
 Skipping Team Secret as 721 < 5496
@@ -96,7 +96,7 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 |-
 | 1
 !style="text-align: left;"| {{Team|Team Falcons}}
-| '''12780'''
+| '''16280'''
 | 
 | 
 | 1680
@@ -105,7 +105,7 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | {{PlacementBg/1}} 6400
 | 
-| 500
+| {{PlacementBg/3}} 4000
 |-
 | 2
 !style="text-align: left;"| {{Team|BetBoom Team}}
@@ -122,7 +122,7 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 |-
 | 3
 !style="text-align: left;"| {{Team|Xtreme Gaming}}
-| '''8200'''
+| '''9400'''
 | 
 | 
 | 
@@ -131,11 +131,11 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 1040
 | 
-| 1000
+| 2200
 |-
 | 4
 !style="text-align: left;"| {{Team|Tundra Esports}}
-| '''7550'''
+| '''6550'''
 | 880
 | -880
 | 780
@@ -144,24 +144,11 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | {{PlacementBg/3}} 4000
 | 
-| {{PlacementBg/4}} 3200
+| 2200
 |-
 | 5
-!style="text-align: left;"| {{Team|Team Liquid}}
-| '''6538'''
-| 200
-| 
-| {{PlacementBg/3}} 3000
-| 
-| 98
-| 
-| 2240
-| 
-| 1000
-|-
-| 6
 !style="text-align: left;"| {{Team|Gaimin Gladiators}}
-| '''6460'''
+| '''6210'''
 | 400
 | 
 | {{PlacementBg/2}} 3600
@@ -170,22 +157,22 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 280
 | 
+| 250
+|-
+| 6
+!style="text-align: left;"| {{Team|Team Liquid}}
+| '''6038'''
+| 200
+| 
+| {{PlacementBg/3}} 3000
+| 
+| 98
+| 
+| 2240
+| 
 | 500
 |-
 | 7
-!style="text-align: left;"| {{Team|Shopify Rebellion}}
-| '''6120'''
-| {{PlacementBg/2}} 2000
-| -2000
-| 
-| 
-| 840
-| 
-| 280
-| 
-| {{PlacementBg/2}} 5000
-|-
-| 8
 !style="text-align: left;"| {{Team|Natus Vincere}}
 | '''6000'''
 | 
@@ -197,6 +184,19 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 
 | {{PlacementBg/1}} 6000
+|-
+| 8
+!style="text-align: left;"| {{Team|Aurora}}
+| '''5660'''
+| 
+| +100
+| 
+| 
+| 560
+| 
+| 
+| 
+| {{PlacementBg/2}} 5000
 |-
 | colspan="99" | Top 8 cutoff
 |-
@@ -227,19 +227,6 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 |-
 | 11
-!style="text-align: left;"| {{Team|Azure Ray}}
-| '''4175'''
-| 
-| 
-| {{PlacementBg/1}} 4800
-| -4800
-| 175
-| 
-| 
-| 
-| {{PlacementBg/3}} 4000
-|-
-| 12
 !style="text-align: left;"| {{Team|G2.iG}}
 | '''3962'''
 | 
@@ -252,9 +239,22 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 
 |-
+| 12
+!style="text-align: left;"| {{Team|PSG Quest}}
+| '''3300'''
+| 100
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| {{PlacementBg/4}} 3200
+|-
 | 13
 !style="text-align: left;"| {{Team|HEROIC}}
-| '''3338'''
+| '''2138'''
 | 
 | 
 | 
@@ -263,22 +263,35 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 1040
 | 
-| 2200
+| 1000
 |-
 | 14
-!style="text-align: left;"| {{Team|Aurora}}
-| '''2860'''
-| 
-| +100
-| 
-| 
-| 560
+!style="text-align: left;"| {{Team|Shopify Rebellion}}
+| '''1620'''
+| {{PlacementBg/2}} 2000
+| -2000
 | 
 | 
+| 840
 | 
-| 2200
+| 280
+| 
+| 500
 |-
 | 15
+!style="text-align: left;"| {{Team|Azure Ray}}
+| '''1175'''
+| 
+| 
+| {{PlacementBg/1}} 4800
+| -4800
+| 175
+| 
+| 
+| 
+| 1000
+|-
+| 16
 !style="text-align: left;"| {{Team|Team Secret}}
 | '''721'''
 | 
@@ -291,7 +304,7 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 
 |-
-| 16
+| 17
 !style="text-align: left;"| {{Team|Entity}}
 | '''616'''
 | 880
@@ -304,7 +317,7 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 
 |-
-| 17
+| 18
 !style="text-align: left;"| {{Team|Talon Esports}}
 | '''560'''
 | 100
@@ -317,7 +330,7 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 
 |-
-| 18
+| 19
 !style="text-align: left;"| {{Team|Blacklist International}}
 | '''420'''
 | 
@@ -330,7 +343,7 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 
 |-
-| 19
+| 20
 !style="text-align: left;"| {{Team|LGD Gaming}}
 | '''420'''
 | 
@@ -342,19 +355,6 @@ This is the following scenario where {{Team|OG}} fail to qualify with 5496 point
 | 
 | 
 | 
-|-
-| 20
-!style="text-align: left;"| {{Team|PSG Quest}}
-| '''350'''
-| 100
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 250
 |-
 | 21
 !style="text-align: left;"| {{Team|Virtus.pro}}
