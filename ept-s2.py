@@ -338,16 +338,6 @@ class Model:
             elif tournament_enum == Tournament.S23:
                 self.s23_highest[t] = self.r_s23[best - 1]
 
-        # Groups - two of each group are eliminated
-        # Only works for 6-team groups
-        # to_add is an offset so, say, group A last = 11th (to_add = 0), group B last = 12th (to_add = 1)
-        def add_group_constraint(tournament, group, to_add):
-            # One of these finishes second-last
-            one_of_these_teams_finishes_in(tournament, group, 9 + to_add)
-
-            # One of these finishes last
-            one_of_these_teams_finishes_in(tournament, group, 11 + to_add)
-
         def one_of_these_teams_finishes_in(tournament, group, position):
             sum = 0
             for group_team in group:
@@ -358,8 +348,16 @@ class Model:
         #############################
         # ESL One Birmingham
         #############################
-        add_group_constraint(x_birmingham, ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion'], 0)
-        add_group_constraint(x_birmingham, ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming'], 1)
+        # Groups - one team finishes last, one team finishes second-last
+        # Arbitrarily pick a joint position for each group (9/10, 11/12)
+        
+        # Group A
+        one_of_these_teams_finishes_in(x_birmingham, ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion'], 9)
+        one_of_these_teams_finishes_in(x_birmingham, ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion'], 11)
+
+        # Group B
+        one_of_these_teams_finishes_in(x_birmingham, ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming'], 10)
+        one_of_these_teams_finishes_in(x_birmingham, ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming'], 12)
 
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'BetBoom Team', 2, 2)
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Xtreme Gaming', 7, 8)
@@ -374,8 +372,11 @@ class Model:
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'HEROIC', 7, 8)
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Talon Esports', 9, 10)
 
+        # 7th-8th - force matchups to avoid, say, Liquid and HEROIC both finishing 7th-8th (impossible as they play each other)
         one_of_these_teams_finishes_in(x_birmingham, ['Team Liquid', 'HEROIC'], 7)
         one_of_these_teams_finishes_in(x_birmingham, ['Xtreme Gaming', 'G2.iG'], 8)
+
+        # 5th-6th - we know how teams drop from the upper bracket
         one_of_these_teams_finishes_in(x_birmingham, ['Team Falcons', 'Tundra Esports', 'Team Liquid', 'HEROIC'], 5)
         one_of_these_teams_finishes_in(x_birmingham, ['OG', 'BetBoom Team', 'Xtreme Gaming', 'G2.iG'], 6)
 
