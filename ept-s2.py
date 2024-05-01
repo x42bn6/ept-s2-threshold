@@ -512,7 +512,7 @@ def main():
     max_team = -1
     max_solution = -1
     max_model = None
-    #for t in [9]:
+    #for t in [Model().teamlist.index('PSG Quest')]:
     for t in range(len(Model().currentpoints)):
         model = Model()
         print(f"Optimising for {list(model.currentpoints.keys())[t]}")
