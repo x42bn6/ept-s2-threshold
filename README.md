@@ -1,4 +1,4 @@
-# ept-s2-threshold
+# ESL Pro Tour Season 2 threshold calculator
 A Python script that tries to find the threshold to qualify to Riyadh Masters 2024, for the ESL Pro Tour (EPT).
 
 Most of the credit for this goes to "tkunt", who wrote [this article](https://tkunt.medium.com/computing-bounds-for-ranks-and-ti-qualification-of-the-dpc-2023-tour-3-870957df4ec5) for the Dota Pro Circuit.  I merely adopted it for the ESL Pro Tour.
