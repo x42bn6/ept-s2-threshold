@@ -246,7 +246,12 @@ class Model:
 
         self.points_s22_birmingham = {}
 
-        self.points_birmingham_s23 = {}
+        self.points_birmingham_s23 = {
+            # Roster submission issue ahead of Birmingham
+            'Tundra Esports': -35,
+            # Palos, Mjz -> Natsumi, Jaunuel
+            'Blacklist International': -126
+        }
 
         # Any changes after S23
         self.points_s23_riyadh = {}
@@ -348,17 +353,6 @@ class Model:
         #############################
         # ESL One Birmingham
         #############################
-        # Groups - one team finishes last, one team finishes second-last
-        # Arbitrarily pick a joint position for each group (9/10, 11/12)
-        
-        # Group A
-        one_of_these_teams_finishes_in(x_birmingham, ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion'], 9)
-        one_of_these_teams_finishes_in(x_birmingham, ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion'], 11)
-
-        # Group B
-        one_of_these_teams_finishes_in(x_birmingham, ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming'], 10)
-        one_of_these_teams_finishes_in(x_birmingham, ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming'], 12)
-
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'BetBoom Team', 2, 2)
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Xtreme Gaming', 7, 8)
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Team Falcons', 1, 1)
@@ -372,6 +366,16 @@ class Model:
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'HEROIC', 7, 8)
         team_can_finish_between(x_birmingham, Tournament.BIRMINGHAM, 'Talon Esports', 9, 10)
 
+        # Group A
+        birmingham_group_a = ['BetBoom Team', 'Team Liquid', 'G2.iG', 'Talon Esports', 'Team Falcons', 'Shopify Rebellion']
+        one_of_these_teams_finishes_in(x_birmingham, birmingham_group_a, 9)
+        one_of_these_teams_finishes_in(x_birmingham, birmingham_group_a, 11)
+
+        # Group B
+        birmingham_group_b = ['HEROIC', 'OG', 'Tundra Esports', 'Team Spirit', 'Gaimin Gladiators', 'Xtreme Gaming']
+        one_of_these_teams_finishes_in(x_birmingham, birmingham_group_b, 10)
+        one_of_these_teams_finishes_in(x_birmingham, birmingham_group_b, 12)
+        
         # 7th-8th - force matchups to avoid, say, Liquid and HEROIC both finishing 7th-8th (impossible as they play each other)
         one_of_these_teams_finishes_in(x_birmingham, ['Team Liquid', 'HEROIC'], 7)
         one_of_these_teams_finishes_in(x_birmingham, ['Xtreme Gaming', 'G2.iG'], 8)
@@ -385,17 +389,27 @@ class Model:
         #############################
         team_can_finish_between(x_s23, Tournament.S23, 'BetBoom Team', 1, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Xtreme Gaming', 1, 12)
-        team_can_finish_between(x_s23, Tournament.S23, 'Team Falcons', 1, 12)
-        team_can_finish_between(x_s23, Tournament.S23, 'Gaimin Gladiators', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Team Falcons', 1, 6)
+        team_can_finish_between(x_s23, Tournament.S23, 'Gaimin Gladiators', 1, 6)
         team_can_finish_between(x_s23, Tournament.S23, 'Team Liquid', 1, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Shopify Rebellion', 1, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Aurora', 1, 12)
-        team_can_finish_between(x_s23, Tournament.S23, 'Tundra Esports', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Tundra Esports', 1, 6)
         team_can_finish_between(x_s23, Tournament.S23, 'HEROIC', 1, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Azure Ray', 1, 12)
-        team_can_finish_between(x_s23, Tournament.S23, 'PSG Quest', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'PSG Quest', 9, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Natus Vincere', 1, 12)
 
+        # Group A
+        s23_group_a = ['Aurora', 'Gaimin Gladiators', 'HEROIC', 'PSG Quest', 'Team Liquid', 'Xtreme Gaming']
+        one_of_these_teams_finishes_in(x_s23, s23_group_a, 9)
+        one_of_these_teams_finishes_in(x_s23, s23_group_a, 11)
+
+        # Group B
+        s23_group_b = ['Azure Ray', 'BetBoom Team', 'Natus Vincere', 'Shopify Rebellion', 'Team Falcons', 'Tundra Esports']
+        one_of_these_teams_finishes_in(x_s23, s23_group_b, 10)
+        one_of_these_teams_finishes_in(x_s23, s23_group_b, 12)
+        
         # ESL One Birmingham constraints
         # Qualified teams
         for t in self.birmingham_teams:
