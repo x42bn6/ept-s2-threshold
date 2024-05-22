@@ -349,6 +349,13 @@ class Model:
                 t = teamlist.index(group_team)
                 sum += tournament[t][position - 1]
             model.Add(sum == 1)
+
+        def all_ub_known_thus_these_teams_are_guaranteed_lb_or_eliminated(tournament, group):
+            sum = 0
+            for i in range(0, 2):
+                for team in group:
+                    sum += tournament[teamlist.index(team)][i]
+            model.Add(sum <= 1)
         
         #############################
         # ESL One Birmingham
@@ -388,16 +395,16 @@ class Model:
         # DreamLeague Season 23
         #############################
         team_can_finish_between(x_s23, Tournament.S23, 'BetBoom Team', 1, 12)
-        team_can_finish_between(x_s23, Tournament.S23, 'Xtreme Gaming', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Xtreme Gaming', 1, 6)
         team_can_finish_between(x_s23, Tournament.S23, 'Team Falcons', 1, 6)
         team_can_finish_between(x_s23, Tournament.S23, 'Gaimin Gladiators', 1, 6)
         team_can_finish_between(x_s23, Tournament.S23, 'Team Liquid', 1, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Shopify Rebellion', 1, 12)
-        team_can_finish_between(x_s23, Tournament.S23, 'Aurora', 1, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'Aurora', 1, 8)
         team_can_finish_between(x_s23, Tournament.S23, 'Tundra Esports', 1, 6)
         team_can_finish_between(x_s23, Tournament.S23, 'HEROIC', 1, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Azure Ray', 1, 12)
-        team_can_finish_between(x_s23, Tournament.S23, 'PSG Quest', 9, 12)
+        team_can_finish_between(x_s23, Tournament.S23, 'PSG Quest', 11, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Natus Vincere', 1, 12)
 
         # Group A
@@ -409,6 +416,9 @@ class Model:
         s23_group_b = ['Azure Ray', 'BetBoom Team', 'Natus Vincere', 'Shopify Rebellion', 'Team Falcons', 'Tundra Esports']
         one_of_these_teams_finishes_in(x_s23, s23_group_b, 10)
         one_of_these_teams_finishes_in(x_s23, s23_group_b, 12)
+
+        # LB teams - not possible for 1st + 2nd from here
+        all_ub_known_thus_these_teams_are_guaranteed_lb_or_eliminated(x_s23, ['Aurora', 'HEROIC', 'Team Liquid', 'Azure Ray', 'Natus Vincere', 'Shopify Rebellion', 'BetBoom Team'])
         
         # ESL One Birmingham constraints
         # Qualified teams
