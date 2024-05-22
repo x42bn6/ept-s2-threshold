@@ -1,4 +1,5 @@
-Requirement already satisfied: ortools in f:\development\python-3.12.2-embed-amd64\lib\site-packages (9.9.3963)
+Requirement already satisfied: ortools in f:\development\python-3.12.2-embed-amd64\lib\site-packages (9.9.3963)Optimising for BetBoom Team
+
 Requirement already satisfied: absl-py>=2.0.0 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (2.1.0)
 Requirement already satisfied: numpy>=1.13.3 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (1.26.4)
 Requirement already satisfied: pandas>=2.0.0 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (2.2.1)
@@ -8,7 +9,6 @@ Requirement already satisfied: python-dateutil>=2.8.2 in f:\development\python-3
 Requirement already satisfied: pytz>=2020.1 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from pandas>=2.0.0->ortools) (2024.1)
 Requirement already satisfied: tzdata>=2022.7 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from pandas>=2.0.0->ortools) (2024.1)
 Requirement already satisfied: six>=1.5 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from python-dateutil>=2.8.2->pandas>=2.0.0->ortools) (1.16.0)
-Optimising for BetBoom Team
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for Gaimin Gladiators
@@ -24,7 +24,7 @@ Optimising for OG
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for Shopify Rebellion
-Objective value: 5120.0
+Skipping Shopify Rebellion as 1620 < 5200
 
 Optimising for Entity
 Skipping Entity as 616 < 5200
@@ -72,7 +72,7 @@ Optimising for 1win
 Skipping 1win as 42 < 5200
 
 Optimising for Natus Vincere
-Objective value: 5000.0
+Skipping Natus Vincere as 250 < 5200
 
 Printing Liquipedia table
 
@@ -95,19 +95,6 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 !style="min-width:50px"|{{LeagueIconSmall/dreamleague|name=DreamLeague Season 23|link=DreamLeague/Season 23|date=2024-05-26}}
 |-
 | 1
-!style="text-align: left;"| {{Team|BetBoom Team}}
-| '''15500'''
-| {{PlacementBg/3}} 1600
-| 
-| {{PlacementBg/4}} 2400
-| 
-| {{PlacementBg/2}} 3500
-| 
-| {{PlacementBg/2}} 4800
-| 
-| {{PlacementBg/4}} 3200
-|-
-| 2
 !style="text-align: left;"| {{Team|Team Falcons}}
 | '''14480'''
 | 
@@ -120,22 +107,22 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 2200
 |-
-| 3
-!style="text-align: left;"| {{Team|Gaimin Gladiators}}
-| '''11960'''
-| 400
+| 2
+!style="text-align: left;"| {{Team|BetBoom Team}}
+| '''13300'''
+| {{PlacementBg/3}} 1600
 | 
-| {{PlacementBg/2}} 3600
+| {{PlacementBg/4}} 2400
 | 
-| 1680
+| {{PlacementBg/2}} 3500
 | 
-| 280
+| {{PlacementBg/2}} 4800
 | 
-| {{PlacementBg/1}} 6000
+| 1000
 |-
-| 4
+| 3
 !style="text-align: left;"| {{Team|Xtreme Gaming}}
-| '''11200'''
+| '''12200'''
 | 
 | 
 | 
@@ -144,24 +131,24 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 1040
 | 
-| {{PlacementBg/3}} 4000
+| {{PlacementBg/2}} 5000
+|-
+| 4
+!style="text-align: left;"| {{Team|Gaimin Gladiators}}
+| '''8160'''
+| 400
+| 
+| {{PlacementBg/2}} 3600
+| 
+| 1680
+| 
+| 280
+| 
+| 2200
 |-
 | 5
-!style="text-align: left;"| {{Team|Team Liquid}}
-| '''6538'''
-| 200
-| 
-| {{PlacementBg/3}} 3000
-| 
-| 98
-| 
-| 2240
-| 
-| 1000
-|-
-| 6
 !style="text-align: left;"| {{Team|Tundra Esports}}
-| '''6515'''
+| '''7515'''
 | 880
 | -880
 | 780
@@ -170,11 +157,11 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | {{PlacementBg/3}} 4000
 | -35
-| 2200
+| {{PlacementBg/4}} 3200
 |-
-| 7
+| 6
 !style="text-align: left;"| {{Team|Aurora}}
-| '''5660'''
+| '''6660'''
 | 
 | +100
 | 
@@ -183,7 +170,20 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 
 | 
-| {{PlacementBg/2}} 5000
+| {{PlacementBg/1}} 6000
+|-
+| 7
+!style="text-align: left;"| {{Team|Team Liquid}}
+| '''6038'''
+| 200
+| 
+| {{PlacementBg/3}} 3000
+| 
+| 98
+| 
+| 2240
+| 
+| 500
 |-
 | 8
 !style="text-align: left;"| {{Team|OG}}
@@ -214,6 +214,19 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 |-
 | 10
+!style="text-align: left;"| {{Team|HEROIC}}
+| '''5138'''
+| 
+| 
+| 
+| 
+| 98
+| 
+| 1040
+| 
+| {{PlacementBg/3}} 4000
+|-
+| 11
 !style="text-align: left;"| {{Team|G2.iG}}
 | '''3962'''
 | 
@@ -226,22 +239,9 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 
 |-
-| 11
-!style="text-align: left;"| {{Team|HEROIC}}
-| '''1638'''
-| 
-| 
-| 
-| 
-| 98
-| 
-| 1040
-| 
-| 500
-|-
 | 12
 !style="text-align: left;"| {{Team|Shopify Rebellion}}
-| '''1370'''
+| '''1620'''
 | {{PlacementBg/2}} 2000
 | -2000
 | 
@@ -250,7 +250,7 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 280
 | 
-| 250
+| 500
 |-
 | 13
 !style="text-align: left;"| {{Team|Azure Ray}}
@@ -305,19 +305,6 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 |-
 | 17
-!style="text-align: left;"| {{Team|Natus Vincere}}
-| '''500'''
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 
-| 500
-|-
-| 18
 !style="text-align: left;"| {{Team|LGD Gaming}}
 | '''420'''
 | 
@@ -330,7 +317,7 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 
 |-
-| 19
+| 18
 !style="text-align: left;"| {{Team|PSG Quest}}
 | '''350'''
 | 100
@@ -343,7 +330,7 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 250
 |-
-| 20
+| 19
 !style="text-align: left;"| {{Team|Virtus.pro}}
 | '''350'''
 | 
@@ -356,7 +343,7 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 
 |-
-| 21
+| 20
 !style="text-align: left;"| {{Team|Blacklist International}}
 | '''294'''
 | 
@@ -368,6 +355,19 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | -126
 | 
+|-
+| 21
+!style="text-align: left;"| {{Team|Natus Vincere}}
+| '''250'''
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 250
 |-
 | 22
 !style="text-align: left;"| {{Team|1win}}
