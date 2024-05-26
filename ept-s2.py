@@ -58,7 +58,7 @@ class SolvedModel:
         for t in range(teams):
             teamname = list(currentpoints.keys())[t]
 
-            mat[t] = [0] * 11
+            mat[t] = [0] * 12
             mat[t][0] = teamname
             mat[t][1] = format_points_tournament(self.points_s21.get(teamname))
             mat[t][2] = format_points_in_between(self.points_s21_kl.get(teamname))
@@ -69,8 +69,9 @@ class SolvedModel:
             mat[t][7] = format_points_tournament(solver.Value(self.d_birmingham[t]))
             mat[t][8] = format_points_in_between(self.points_birmingham_s23.get(teamname))
             mat[t][9] = format_points_tournament(solver.Value(self.d_s23[t]))
-            mat[t][10] = solver.Value(self.d[t])
-        sortedmatrix = sorted(mat, key=lambda x: x[10], reverse=True)
+            mat[t][10] = format_points_in_between(self.points_s23_riyadh.get(teamname))
+            mat[t][11] = solver.Value(self.d[t])
+        sortedmatrix = sorted(mat, key=lambda x: x[11], reverse=True)
 
         def get_team_name(t):
             return teamlist[t]
@@ -106,6 +107,8 @@ class SolvedModel:
         print("!style=\"min-width:50px\"|{{LeagueIconSmall/esl one|name=ESL One Birmingham 2024|link=ESL One/Birmingham/2024|date=2024-04-28}}")
         print("!style=\"min-width:50px; font-size: larger;\"|<span title=\"Point changes between ESL One Birmingham 2024 and DreamLeague Season 23\">&hArr;</span>")
         print("!style=\"min-width:50px\"|{{LeagueIconSmall/dreamleague|name=DreamLeague Season 23|link=DreamLeague/Season 23|date=2024-05-26}}")
+        print("!style=\"min-width:50px; font-size: larger;\"|<span title=\"Point changes DreamLeague Season 23 and Riyadh Masters 2024\">&hArr;</span>")
+        print("!style=\"min-width:50px\"|{{LeagueIconSmall/riyadh masters|name=Riyadh Masters 2024|link=Riyadh Masters/2024|date=2024-07-21}}")
         i = 0
         for row in sortedmatrix:
             if i == 8:
@@ -124,9 +127,9 @@ class SolvedModel:
             print(f'!style="text-align: left;"| {teamcomponent}')
 
             if i == 8:
-                print(f'| style="font-weight: bold; background-color: var(--achievement-placement-down, #cd5b5b);" | {row[10]}')
+                print(f'| style="font-weight: bold; background-color: var(--achievement-placement-down, #cd5b5b);" | {row[11]}')
             else:
-                print(f"| '''{row[10]}'''")
+                print(f"| '''{row[11]}'''")
             print(f"| {s21component}")
             print(f"| {row[2]}")
             print(f"| {klcomponent}")
@@ -136,6 +139,11 @@ class SolvedModel:
             print(f"| {birminghamcomponent}")
             print(f"| {row[8]}")
             print(f"| {s23component}")
+            print(f"| {row[10]}")
+            if i < 8:
+                print(f'|[[Riyadh_Masters/2024#Group_Stage_Seeds|GS]]')
+            else:
+                print(f"|")
             i += 1
         print("|}")
 
@@ -249,12 +257,13 @@ class Model:
         self.points_birmingham_s23 = {
             # Roster submission issue ahead of Birmingham
             'Tundra Esports': -35,
-            # Palos, Mjz -> Natsumi, Jaunuel
-            'Blacklist International': -126
         }
 
         # Any changes after S23
-        self.points_s23_riyadh = {}
+        self.points_s23_riyadh = {
+            # Palos, Mjz -> Natsumi, Jaunuel
+            'Blacklist International': -126
+        }
 
         self.currentpoints = Counter_tweaked(self.points_s21) + Counter_tweaked(self.points_s21_kl) + \
             Counter_tweaked(self.points_kl) + Counter_tweaked(self.points_kl_s22) + \
