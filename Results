@@ -1,5 +1,4 @@
-Requirement already satisfied: ortools in f:\development\python-3.12.2-embed-amd64\lib\site-packages (9.9.3963)Optimising for BetBoom Team
-
+Requirement already satisfied: ortools in f:\development\python-3.12.2-embed-amd64\lib\site-packages (9.9.3963)
 Requirement already satisfied: absl-py>=2.0.0 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (2.1.0)
 Requirement already satisfied: numpy>=1.13.3 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (1.26.4)
 Requirement already satisfied: pandas>=2.0.0 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from ortools) (2.2.1)
@@ -9,13 +8,14 @@ Requirement already satisfied: python-dateutil>=2.8.2 in f:\development\python-3
 Requirement already satisfied: pytz>=2020.1 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from pandas>=2.0.0->ortools) (2024.1)
 Requirement already satisfied: tzdata>=2022.7 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from pandas>=2.0.0->ortools) (2024.1)
 Requirement already satisfied: six>=1.5 in f:\development\python-3.12.2-embed-amd64\lib\site-packages (from python-dateutil>=2.8.2->pandas>=2.0.0->ortools) (1.16.0)
+Optimising for BetBoom Team
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for Gaimin Gladiators
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for Team Spirit
-Objective value: 5200.0
+No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for Team Liquid
 No optimal solution found, probably unable to finish outside of top 8.
@@ -24,60 +24,60 @@ Optimising for OG
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for Shopify Rebellion
-Skipping Shopify Rebellion as 1620 < 5200
+Objective value: 1620.0
 
 Optimising for Entity
-Skipping Entity as 616 < 5200
+Skipping Entity as 616 < 1620
 
 Optimising for Tundra Esports
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for PSG Quest
-Skipping PSG Quest as 350 < 5200
+Skipping PSG Quest as 350 < 1620
 
 Optimising for Talon Esports
-Skipping Talon Esports as 560 < 5200
+Skipping Talon Esports as 560 < 1620
 
 Optimising for Aurora
-Objective value: 4659.999999999999
+Objective value: 1660.0
 
 Optimising for Team Falcons
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for G2.iG
-Skipping G2.iG as 3962 < 5200
+Objective value: 3962.0
 
 Optimising for Team Secret
-Skipping Team Secret as 721 < 5200
+Skipping Team Secret as 721 < 3962
 
 Optimising for Blacklist International
-Skipping Blacklist International as 294 < 5200
+Skipping Blacklist International as 294 < 3962
 
 Optimising for LGD Gaming
-Skipping LGD Gaming as 420 < 5200
+Skipping LGD Gaming as 420 < 3962
 
 Optimising for Azure Ray
-Objective value: 5175.0
+Skipping Azure Ray as 2375 < 3962
 
 Optimising for Xtreme Gaming
 No optimal solution found, probably unable to finish outside of top 8.
 
 Optimising for HEROIC
-Objective value: 5138.0
+Skipping HEROIC as 2138 < 3962
 
 Optimising for Virtus.pro
-Skipping Virtus.pro as 350 < 5200
+Skipping Virtus.pro as 350 < 3962
 
 Optimising for 1win
-Skipping 1win as 42 < 5200
+Skipping 1win as 42 < 3962
 
 Optimising for Natus Vincere
-Skipping Natus Vincere as 250 < 5200
+Skipping Natus Vincere as 250 < 3962
 
 Printing Liquipedia table
 
 ==What does the threshold scenario look like?==
-This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5200 points.
+This is the following scenario where {{Team|G2.iG}} fail to qualify with 3962 points.
 
 {| class="wikitable" style="font-size:85%; text-align: center;"
 !style="min-width:40px"|'''Place'''
@@ -96,7 +96,7 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 |-
 | 1
 !style="text-align: left;"| {{Team|Team Falcons}}
-| '''14480'''
+| '''17280'''
 | 
 | 
 | 1680
@@ -105,11 +105,11 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | {{PlacementBg/1}} 6400
 | 
-| 2200
+| {{PlacementBg/2}} 5000
 |-
 | 2
 !style="text-align: left;"| {{Team|BetBoom Team}}
-| '''13300'''
+| '''16300'''
 | {{PlacementBg/3}} 1600
 | 
 | {{PlacementBg/4}} 2400
@@ -118,24 +118,11 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | {{PlacementBg/2}} 4800
 | 
-| 1000
+| {{PlacementBg/3}} 4000
 |-
 | 3
-!style="text-align: left;"| {{Team|Xtreme Gaming}}
-| '''12200'''
-| 
-| 
-| 
-| +3360
-| {{PlacementBg/3}} 2800
-| 
-| 1040
-| 
-| {{PlacementBg/2}} 5000
-|-
-| 4
 !style="text-align: left;"| {{Team|Gaimin Gladiators}}
-| '''8160'''
+| '''11960'''
 | 400
 | 
 | {{PlacementBg/2}} 3600
@@ -144,11 +131,24 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 280
 | 
-| 2200
+| {{PlacementBg/1}} 6000
+|-
+| 4
+!style="text-align: left;"| {{Team|Xtreme Gaming}}
+| '''10400'''
+| 
+| 
+| 
+| +3360
+| {{PlacementBg/3}} 2800
+| 
+| 1040
+| 
+| {{PlacementBg/4}} 3200
 |-
 | 5
 !style="text-align: left;"| {{Team|Tundra Esports}}
-| '''7515'''
+| '''6515'''
 | 880
 | -880
 | 780
@@ -157,22 +157,9 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | {{PlacementBg/3}} 4000
 | -35
-| {{PlacementBg/4}} 3200
+| 2200
 |-
 | 6
-!style="text-align: left;"| {{Team|Aurora}}
-| '''6660'''
-| 
-| +100
-| 
-| 
-| 560
-| 
-| 
-| 
-| {{PlacementBg/1}} 6000
-|-
-| 7
 !style="text-align: left;"| {{Team|Team Liquid}}
 | '''6038'''
 | 200
@@ -185,7 +172,7 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 500
 |-
-| 8
+| 7
 !style="text-align: left;"| {{Team|OG}}
 | '''5496'''
 | {{PlacementBg/4}} 1280
@@ -198,11 +185,9 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 
 |-
-| colspan="99" | Top 8 cutoff
-|-
-| 9
+| 8
 !style="text-align: left;"| {{Team|Team Spirit}}
-| style="font-weight: bold; background-color: var(--achievement-placement-down, #cd5b5b);" | 5200
+| '''5200'''
 | {{PlacementBg/1}} 2400
 | 
 | 
@@ -213,22 +198,11 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 
 |-
-| 10
-!style="text-align: left;"| {{Team|HEROIC}}
-| '''5138'''
-| 
-| 
-| 
-| 
-| 98
-| 
-| 1040
-| 
-| {{PlacementBg/3}} 4000
+| colspan="99" | Top 8 cutoff
 |-
-| 11
+| 9
 !style="text-align: left;"| {{Team|G2.iG}}
-| '''3962'''
+| style="font-weight: bold; background-color: var(--achievement-placement-down, #cd5b5b);" | 3962
 | 
 | 
 | 1680
@@ -239,7 +213,46 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 
 | 
 |-
+| 10
+!style="text-align: left;"| {{Team|Azure Ray}}
+| '''2375'''
+| 
+| 
+| {{PlacementBg/1}} 4800
+| -4800
+| 175
+| 
+| 
+| 
+| 2200
+|-
+| 11
+!style="text-align: left;"| {{Team|HEROIC}}
+| '''2138'''
+| 
+| 
+| 
+| 
+| 98
+| 
+| 1040
+| 
+| 1000
+|-
 | 12
+!style="text-align: left;"| {{Team|Aurora}}
+| '''1660'''
+| 
+| +100
+| 
+| 
+| 560
+| 
+| 
+| 
+| 1000
+|-
+| 13
 !style="text-align: left;"| {{Team|Shopify Rebellion}}
 | '''1620'''
 | {{PlacementBg/2}} 2000
@@ -251,19 +264,6 @@ This is the following scenario where {{Team|Team Spirit}} fail to qualify with 5
 | 280
 | 
 | 500
-|-
-| 13
-!style="text-align: left;"| {{Team|Azure Ray}}
-| '''1175'''
-| 
-| 
-| {{PlacementBg/1}} 4800
-| -4800
-| 175
-| 
-| 
-| 
-| 1000
 |-
 | 14
 !style="text-align: left;"| {{Team|Team Secret}}
