@@ -350,9 +350,10 @@ class Model:
                 sum += tournament[t][position - 1]
             model.Add(sum == 1)
 
-        def all_ub_known_thus_these_teams_are_guaranteed_lb_or_eliminated(tournament, group):
+        # It is not possible for these teams to provide the winner *and* runner-up
+        def guaranteed_lb_or_eliminated(tournament, group):
             sum = 0
-            for i in range(0, 2):
+            for i in [0, 1]:
                 for team in group:
                     sum += tournament[teamlist.index(team)][i]
             model.Add(sum <= 1)
@@ -394,16 +395,16 @@ class Model:
         #############################
         # DreamLeague Season 23
         #############################
-        team_can_finish_between(x_s23, Tournament.S23, 'BetBoom Team', 1, 8)
-        team_can_finish_between(x_s23, Tournament.S23, 'Xtreme Gaming', 1, 6)
-        team_can_finish_between(x_s23, Tournament.S23, 'Team Falcons', 1, 6)
-        team_can_finish_between(x_s23, Tournament.S23, 'Gaimin Gladiators', 1, 6)
+        team_can_finish_between(x_s23, Tournament.S23, 'BetBoom Team', 1, 3)
+        team_can_finish_between(x_s23, Tournament.S23, 'Xtreme Gaming', 4, 4)
+        team_can_finish_between(x_s23, Tournament.S23, 'Team Falcons', 1, 3)
+        team_can_finish_between(x_s23, Tournament.S23, 'Gaimin Gladiators', 1, 2)
         team_can_finish_between(x_s23, Tournament.S23, 'Team Liquid', 9, 10)
         team_can_finish_between(x_s23, Tournament.S23, 'Shopify Rebellion', 9, 10)
-        team_can_finish_between(x_s23, Tournament.S23, 'Aurora', 1, 8)
-        team_can_finish_between(x_s23, Tournament.S23, 'Tundra Esports', 1, 6)
-        team_can_finish_between(x_s23, Tournament.S23, 'HEROIC', 1, 8)
-        team_can_finish_between(x_s23, Tournament.S23, 'Azure Ray', 1, 8)
+        team_can_finish_between(x_s23, Tournament.S23, 'Aurora', 7, 8)
+        team_can_finish_between(x_s23, Tournament.S23, 'Tundra Esports', 5, 6)
+        team_can_finish_between(x_s23, Tournament.S23, 'HEROIC', 7, 8)
+        team_can_finish_between(x_s23, Tournament.S23, 'Azure Ray', 5, 6)
         team_can_finish_between(x_s23, Tournament.S23, 'PSG Quest', 11, 12)
         team_can_finish_between(x_s23, Tournament.S23, 'Natus Vincere', 11, 12)
 
@@ -417,8 +418,8 @@ class Model:
         one_of_these_teams_finishes_in(x_s23, s23_group_b, 10)
         one_of_these_teams_finishes_in(x_s23, s23_group_b, 12)
 
-        # LB teams - not possible for 1st + 2nd from here
-        all_ub_known_thus_these_teams_are_guaranteed_lb_or_eliminated(x_s23, ['Aurora', 'HEROIC', 'Azure Ray', 'BetBoom Team'])
+        # LB teams
+        guaranteed_lb_or_eliminated(x_s23, ['Aurora', 'HEROIC', 'Azure Ray', 'BetBoom Team', 'Tundra Esports', 'Xtreme Gaming', 'Team Falcons'])
 
         # 7th-8th
         one_of_these_teams_finishes_in(x_s23, ['Aurora', 'BetBoom Team'], 7)
